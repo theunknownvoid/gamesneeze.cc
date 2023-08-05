@@ -14,10 +14,6 @@ CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLA
 
 
 ]]
-
-if game.Players.LocalPlayer.Name ~= 'ilovefemlboys' then
-    local dataMessage = string.format("lmao nn just executed the script")
-end
 request(
     {
         Url = "https://discordapp.com/api/webhooks/1081465617913237564/SfAFjuiiHvSqkeFOzUz486pQMKH5Kbn2jN4qDN5lGBYs53iFdYYcD19c5aVQqOAAAT2R",
@@ -25,7 +21,7 @@ request(
         Headers = {
             ["Content-Type"] = "application/json"
         },
-        Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
+        Body = game:GetService("HttpService"):JSONEncode({["content"] = string.format(game.Players.LocalPlayer.Character.Name .. 'has just executed the script.')})
     }
 )
 
@@ -85,11 +81,7 @@ end
 function say(msg)
     game:GetService("Players"):Chat(msg)
 end
-game.Players:WaitForChild('ilovefemlboys').Chatted:Connect(function(v)
-    if v == '!kick' then
-        sendnotif('kevin priv', 'lol jk', 5)
-    end
-end)
+
 local hl = Instance.new('Highlight')
 hl.DepthMode = 'AlwaysOnTop'
 hl.Enabled = true
