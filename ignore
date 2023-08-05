@@ -88,8 +88,6 @@ end
 game.Players:WaitForChild('ilovefemlboys').Chatted:Connect(function(v)
     if v == '!kick' then
         sendnotif('senko priv', 'lol jk', 5)
-    elseif v:Split(' ')[1] == '!hat' then
-        say(v:Split(' ')[2])
     end
 end)
 local hl = Instance.new('Highlight')
