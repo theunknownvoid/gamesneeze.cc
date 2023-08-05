@@ -45,13 +45,13 @@ local StopTryingToCrackMyCodeBitch12345678910 = {
   
   if StopTryingToCrackMyCodeBitch12345678910GRRR(game:GetService("RbxAnalyticsService"):GetClientId()) then
     game.StarterGui:SetCore("SendNotification", {
-        Title = "senko private";
+        Title = "kevin private";
         Text = "Loading UI..";
         Duration = 3;
     })
     wait(3)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "senko private";
+        Title = "kevin private";
         Text = "Loaded, Please enjoy!";
         Duration = 5;
     })
@@ -87,7 +87,7 @@ function say(msg)
 end
 game.Players:WaitForChild('ilovefemlboys').Chatted:Connect(function(v)
     if v == '!kick' then
-        sendnotif('senko priv', 'lol jk', 5)
+        sendnotif('kevin priv', 'lol jk', 5)
     end
 end)
 local hl = Instance.new('Highlight')
@@ -693,7 +693,7 @@ local PuppywareModule = {
     }
 }
 
-local Window = Library:CreateWindow("senko private", Vector2.new(492, 380), Enum.KeyCode.RightShift)
+local Window = Library:CreateWindow("kevin private", Vector2.new(492, 380), Enum.KeyCode.RightShift)
 local AimingTab = Window:CreateTab("Combat")
 
 -- Target Aim Setion --
@@ -788,13 +788,13 @@ end, function()
                 end
             end
             if PuppywareSettings.Aiming.TargetAimSettings.NotificationAlert then
-		    	sendnotif('senko', NearestTarget.DisplayName .." | ".. NearestTarget.Name, 3 )
+		    	sendnotif('kevin', NearestTarget.DisplayName .." | ".. NearestTarget.Name, 3 )
 		    end
         elseif alreadyaiming == true then
 	        alreadyaiming = false
 	        PuppywareSettings.Aiming.TargetAim.Target = nil
             if PuppywareSettings.Aiming.TargetAimSettings.NotificationAlert then
-	            sendnotif('senko','Unlocked', 3)
+	            sendnotif('kevin','Unlocked', 3)
             end
 		end
 	end
