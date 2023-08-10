@@ -691,44 +691,8 @@ local TargetAimToggle = RageSection:AddToggle('Dot Lock Enabled', false, functio
     PuppywareSettings.Aiming.TargetAim.Enabled = Boolean
 end)
 
-TargetAimToggle:AddKeybind()
+local TargetAimSettings = AimingTab:CreateSector("Dot Visuals", "left")
 
-RageSection:AddToggle("Velocity Resolver", false, function(v)
-    resolver = v
-end)
-
-RageSection:AddDropdown('Hitboxes', {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}, {"LeftUpperLeg"}, true, function(Value)
-    PuppywareSettings.Aiming.TargetAim.Hitboxes = Value
-end)
-
--- Aiming Settings Section --
-
-local AimingSettings = AimingTab:CreateSector("Dot prediction", "right")
-
-AimingSettings:AddToggle('Ping Based Prediction', false, function(Boolean)
-    PuppywareSettings.Aiming.AimingSettings.PingBasedPrediction = Boolean
-end)
-
-local MovementPredToggle2 = AimingSettings:AddToggle('Custom Prediction', false, function(Boolean)
-    PuppywareSettings.Aiming.AimingSettings.MovementPrediction = Boolean
-end)
-
-MovementPredToggle2:AddSlider(1, 1, 100, 1, function(Value)
-    PuppywareSettings.Aiming.AimingSettings.MovementPredictionAmount = 0.165 * tonumber("1." ..Value)
-end)
-
-local HitChanceToggle2 = AimingSettings:AddToggle('Hit Chance', false, function(Boolean)
-    PuppywareSettings.Aiming.AimingSettings.HitChance = Boolean
-end)
-
-HitChanceToggle2:AddSlider(0, 100, 100, 1, function(Value)
-    PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.HitPercent = tonumber(Value)
-    PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.NotHitPercent = tonumber(100 - PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.HitPercent)
-end)
-
--- Target Aim Settings Section --
-
-local TargetAimSettings = AimingTab:CreateSector("Dot Settings", "left")
 function updatebbl()
 if alreadyaiming and bubble then
     pp.CFrame = NearestTarget.Character.HumanoidRootPart.CFrame
@@ -746,7 +710,7 @@ elseif alreadyaiming == false then
     i.Visible = false
 end
 end
-local TargetBind = TargetAimSettings:AddKeybind("Keybind", false, function()
+local TargetBind = RageSection:AddKeybind("Keybind", false, function()
     
 end, function()
     if PuppywareSettings.Aiming.TargetAim.Enabled then
@@ -788,6 +752,37 @@ end, function()
 	end
 end)
 
+RageSection:AddDropdown('Hitboxes', {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}, {"LeftUpperLeg"}, true, function(Value)
+    PuppywareSettings.Aiming.TargetAim.Hitboxes = Value
+end)
+
+-- Aiming Settings Section --
+
+local AimingSettings = AimingTab:CreateSector("Dot prediction", "right")
+
+AimingSettings:AddToggle('Ping Based Prediction', false, function(Boolean)
+    PuppywareSettings.Aiming.AimingSettings.PingBasedPrediction = Boolean
+end)
+
+local MovementPredToggle2 = AimingSettings:AddToggle('Custom Prediction', false, function(Boolean)
+    PuppywareSettings.Aiming.AimingSettings.MovementPrediction = Boolean
+end)
+
+MovementPredToggle2:AddSlider(1, 1, 100, 1, function(Value)
+    PuppywareSettings.Aiming.AimingSettings.MovementPredictionAmount = 0.165 * tonumber("1." ..Value)
+end)
+
+local HitChanceToggle2 = AimingSettings:AddToggle('Hit Chance', false, function(Boolean)
+    PuppywareSettings.Aiming.AimingSettings.HitChance = Boolean
+end)
+
+HitChanceToggle2:AddSlider(0, 100, 100, 1, function(Value)
+    PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.HitPercent = tonumber(Value)
+    PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.NotHitPercent = tonumber(100 - PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.HitPercent)
+end)
+
+-- Target Aim Settings Section --
+
 TargetAimSettings:AddToggle('Notification Alert', false, function(State)
     PuppywareSettings.Aiming.TargetAimSettings.NotificationAlert = State
 end)
@@ -818,7 +813,9 @@ local armor = {}
 spamdbtoggle:AddKeybind()
 local godarmortoggle = MiscSector:AddToggle('God Armor', false, function(State)
      if State == true then
-         fireclickdetector(game.Workspace["Higher armor {20000$}"].Head.ClickDetector)
+         fireclickdetector(workspace.Ignored.Pads["Higher armor {20000$}"].ClickDetector)
+         task.wait()
+         fireclickdetector(workspace.Ignored.Pads["Higher armor {20000$}"].ClickDetector)
      end
      armor[1] = State
 end)
@@ -1231,14 +1228,22 @@ UserInputService.InputEnded:Connect(function(Key, Event)
         Settings.Aiming.Aimbot.IsAiming = false
     end
 end)
-game.Players.LocalPlayer.Armor:GetPropertyChangedSignal("Value"):Connect(function()
+
+RunService.Heartbeat:Connect(function()
     if armor[1] == true then
-       if game.Players.LocalPlayer.Armor.Value ~= 100 then
-          fireclickdetector(game.Workspace["Higher armor {20000$}"].Head.ClickDetector)
+       for i,v in pairs(game.Workspace.Ignored.Pads:GetDescendants()) do
+           if v.Name == "Head" then
+               v.CFrame = game.Players.localPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,3,0)
+           end
+       end
+       if game.Players.LocalPlayer.BodyEffects.Armor.Value ~= 100 then
+           for i,v in pairs(game.Workspace.Ignored.Pads:GetDescendants()) do
+              if v.Name == "ClickDetector" then
+                 fireclickdetector(v)
+              end
+           end
        end
     end
-end)
-RunService.Heartbeat:Connect(function()
     if spamdb == true then
 	   game:GetService("ReplicatedStorage"):WaitForChild("ToolRemoteEvents"):WaitForChild("DB"):FireServer(game.Players.LocalPlayer:GetMouse().Hit.p, game:GetService("Players").LocalPlayer.Character.DB)
        game:GetService("ReplicatedStorage"):WaitForChild("ToolRemoteEvents"):WaitForChild("DB"):FireServer(game.Players.LocalPlayer:GetMouse().Hit.p, game:GetService("Players").LocalPlayer.Character.DB)
