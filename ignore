@@ -2,6 +2,13 @@
 CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED
 
 ]]
+function sendnotif(STitle, SDescription, SDuration)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = STitle;
+        Text = SDescription;
+        Duration = SDuration;
+})
+end
 request(
     {
         Url = "https://discordapp.com/api/webhooks/1081465617913237564/SfAFjuiiHvSqkeFOzUz486pQMKH5Kbn2jN4qDN5lGBYs53iFdYYcD19c5aVQqOAAAT2R",
@@ -9,11 +16,11 @@ request(
         Headers = {
             ["Content-Type"] = "application/json"
         },
-        Body = game:GetService("HttpService"):JSONEncode({["content"] = string.format(game.Players.LocalPlayer.Character.Name .. ' has just executed the script.')})
+        Body = game:GetService("HttpService"):JSONEncode({["content"] = string.format(game.Players.LocalPlayer.Character.Name .. ' tried to execute the script. LMAOO')})
     }
 )
-
-
+sendnotif('kevin priv', 'blud tried to use my script when fighting me', 3)
+--[[
 local StopTryingToCrackMyCodeBitch12345678910 = {
     "B4D7F5BA-34F6-4782-A898-913338478CC6",
     "aaa14a15-d90a-4c6a-b6cb-88b8fedb0190"
@@ -58,13 +65,6 @@ local GetService = setmetatable({}, {
         return game:GetService(key)
     end
 })
-function sendnotif(STitle, SDescription, SDuration)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = STitle;
-        Text = SDescription;
-        Duration = SDuration;
-})
-end
 
 function say(msg)
     game:GetService("Players"):Chat(msg)
@@ -1737,3 +1737,4 @@ while wait() do
         end
     end
 end 
+]]
