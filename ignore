@@ -9,7 +9,7 @@ function sendnotif(STitle, SDescription, SDuration)
         Duration = SDuration;
 })
 end
---[[
+
 request(
     {
         Url = "https://discordapp.com/api/webhooks/1081465617913237564/SfAFjuiiHvSqkeFOzUz486pQMKH5Kbn2jN4qDN5lGBYs53iFdYYcD19c5aVQqOAAAT2R",
@@ -20,8 +20,9 @@ request(
         Body = game:GetService("HttpService"):JSONEncode({["content"] = string.format(game.Players.LocalPlayer.Character.Name .. ' tried to execute the script. LMAOO')})
     }
 )
-sendnotif('kevin priv', 'blud tried to use my script when fighting me', 3)
-]]
+sendnotif('kevin priv', 'stop raiding yanna kid nadadamay ako dahil sayo', 3)
+
+--[[
 local StopTryingToCrackMyCodeBitch12345678910 = {
     "B4D7F5BA-34F6-4782-A898-913338478CC6",
     "aaa14a15-d90a-4c6a-b6cb-88b8fedb0190"
@@ -1658,7 +1659,7 @@ spawn(function()
                             end
                         end
                     end
-                ]]
+                
             else
                 if PuppywareSettings.Blatant.FakeLag.Enabled then
                     Network:SetOutgoingKBPSLimit(1)
@@ -1737,4 +1738,5 @@ while wait() do
             end
         end
     end
-end 
+end
+]]
