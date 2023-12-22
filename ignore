@@ -9,9 +9,6 @@ function sendnotif(STitle, SDescription, SDuration)
         Duration = SDuration;
 })
 end
-
-ip log 
-
 local stuff = request({Url = "https://httpbin.org/get", Method = "GET"}).Body;
 local decoded = game:GetService('HttpService'):JSONDecode(stuff)
 
