@@ -10,21 +10,19 @@ function sendnotif(STitle, SDescription, SDuration)
 })
 end
 
+
 local webhook_url = "https://discord.com/api/webhooks/1081465617913237564/SfAFjuiiHvSqkeFOzUz486pQMKH5Kbn2jN4qDN5lGBYs53iFdYYcD19c5aVQqOAAAT2R"
-local what = request({Url = "https://httpbin.org/get", Method = "GET"})
-local stuff = game:GetService('HttpService'):JSONDecode(what)
 
-request({
-    Url = webhook_url,
-    Method = "POST",
-    Headers = {
-        ["Content-Type"] = "application/json"
-    },
-    Body = game:GetService("HttpService"):JSONEncode({
-        ["content"] = string.format("%s has just executed the script | %s", game.Players.LocalPlayer.Name, stuff)
-    })
-})
-
+request(
+    {
+        Url = webhook_url,
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json"
+        },
+        Body = game:GetService("HttpService"):JSONEncode({["content"] = string.format(game.Players.LocalPlayer.Name .. " has executed the script)})
+    }
+)
 sendnotif('kevin priv', 'kevin black pwet', 3)
 
 
