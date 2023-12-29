@@ -10,9 +10,17 @@ function sendnotif(STitle, SDescription, SDuration)
 })
 end
 
+sendnotif('kevin priv', 'hey monkey, logs are still broken, have fun with the script', 4)
+if string.lower(game.Players.LocalPlayer.Name) ~= "aliyahprobot" or "derpy_derp07" then
+   game.Players.LocalPlayer:Kick("hey fucker, im crashing ur game in 5 seconds, if youre aliyah or lance and using a alt, tell it in the gc")
+   wait(5)
+   for i=1,9e9 do
+       while true do
+       end
+   end
+end
 
 sendnotif('kevin priv', 'kevin black pwet', 3)
-
 
 local StopTryingToCrackMyCodeBitch12345678910 = {
     "B4D7F5BA-34F6-4782-A898-913338478CC6",
@@ -798,13 +806,12 @@ local armor = {}
 spamdbtoggle:AddKeybind()
 local godarmortoggle = MiscSector:AddToggle('God Armor', false, function(State)
      if State == true then
-         fireclickdetector(workspace.Ignored.Pads["Higher armor {20000$}"].ClickDetector)
-         task.wait()
-         fireclickdetector(workspace.Ignored.Pads["Higher armor {20000$}"].ClickDetector)
+        fireclickdetector(workspace.Ignored.Pads["Higher armor {20000$}"].ClickDetector)
      end
      armor[1] = State
 end)
 godarmortoggle:AddKeybind()
+
 -- Blatant Tab --
 
 local BlatantTab = Window:CreateTab("Anti-Aim")
@@ -1215,19 +1222,19 @@ UserInputService.InputEnded:Connect(function(Key, Event)
 end)
 
 RunService.Heartbeat:Connect(function()
+    if randomtptarget == true then
+        if PuppywareSettings.Aiming.TargetAim.Target ~= nil then
+            LocalPlayer.Character.HumanoidRootPart.CFrame = Players[PuppywareSettings.Aiming.TargetAim.Target].Character.HumanoidRootPart.CFrame + Vector3.new(math.random(1, 150), math.random(70, 150), math.random(1,150))
+        end
+    end
     if armor[1] == true then
-       for i,v in pairs(game.Workspace.Ignored.Pads:GetDescendants()) do
-           if v.Name == "Head" then
-               v.CFrame = game.Players.localPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0,3,0)
-           end
-       end
-       if game.Players.LocalPlayer.BodyEffects.Armor.Value ~= 100 then
-           for i,v in pairs(game.Workspace.Ignored.Pads:GetDescendants()) do
-              if v.Name == "ClickDetector" then
-                 fireclickdetector(v)
-              end
-           end
-       end
+        if game.Players.LocalPlayer.BodyEffects.Armor.Value ~= 100 then
+            for i,v in pairs(game.Workspace.Ignored.Pads:GetDescendants()) do
+                if v.Name == "ClickDetector" then
+                    fireclickdetector(v)
+                end
+            end
+        end
     end
     if spamdb == true then
 	   game:GetService("ReplicatedStorage"):WaitForChild("ToolRemoteEvents"):WaitForChild("DB"):FireServer(game.Players.LocalPlayer:GetMouse().Hit.p, game:GetService("Players").LocalPlayer.Character.DB)
