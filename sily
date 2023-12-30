@@ -11,7 +11,7 @@ function sendnotif(STitle, SDescription, SDuration)
 })
 end
 
-sendnotif('kevin priv', 'hey monkey, logs are still broken, have fun with the script', 4)
+sendnotif('kevin priv', 'hey monkey logs are still broken have fun with the script', 4)
 
 
 sendnotif('kevin priv', 'kevin black pwet', 3)
