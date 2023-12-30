@@ -12,14 +12,7 @@ function sendnotif(STitle, SDescription, SDuration)
 end
 
 sendnotif('kevin priv', 'hey monkey, logs are still broken, have fun with the script', 4)
-if string.lower(game.Players.LocalPlayer.Name) ~= "aliyahprobot" or "derpy_derp07" or "kwajis" then
-   game.Players.LocalPlayer:Kick("hey fucker, im crashing ur game in 5 seconds, if youre aliyah or lance and using a alt, tell it in the gc")
-   wait(5)
-   for i=1,9e9 do
-       while true do
-       end
-   end
-end
+
 
 sendnotif('kevin priv', 'kevin black pwet', 3)
 
