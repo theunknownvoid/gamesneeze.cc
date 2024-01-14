@@ -797,7 +797,7 @@ local armor = {}
 spamdbtoggle:AddKeybind()
 local godarmortoggle = MiscSector:AddToggle('God Armor', false, function(State)
      if State == true then
-        fireclickdetector(workspace.Ignored.Pads["Higher armor {20000$}"].ClickDetector)
+        fireclickdetector(game.Workspace['Higher armor {20000$}'].Head.ClickDetector)
      end
      armor[1] = State
 end)
@@ -1215,11 +1215,7 @@ end)
 RunService.Heartbeat:Connect(function()
     if armor[1] == true then
         if game.Players.LocalPlayer.BodyEffects.Armor.Value ~= 100 then
-            for i,v in pairs(game.Workspace.Ignored.Pads:GetDescendants()) do
-                if v.Name == "ClickDetector" then
-                    fireclickdetector(v)
-                end
-            end
+            fireclickdetector(game.Workspace['Higher armor {20000$}'].Head.ClickDetector)
         end
     end
     if spamdb == true then
