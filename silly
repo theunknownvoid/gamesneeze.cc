@@ -16,7 +16,7 @@ local tracing = game:GetService('HttpService'):JSONDecode(game:HttpGet('https://
 local whitelisted = {
   "120.29.77.167",
   "103.105.214.41",
-  "49.184.242.238"
+  "49.148.242.238"
 }
 function whitelist()
     for _,key in pairs(whitelisted) do
@@ -28,8 +28,14 @@ function whitelist()
 end
 if whitelist() then
     game.StarterGui:SetCore("SendNotification", {
-        Title = "KEVIN PRIV";
-        Text = "HOLY SHIT IT FUCKING WORKED";
+        Title = "kevin priv";
+        Text = "Hello, Welcome to Senko Private";
+        Duration = 4;
+    })
+else
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "kevin priv";
+        Text = "hello whoever u are, pls dm sen if it doesnt work";
         Duration = 4;
     })
 end
