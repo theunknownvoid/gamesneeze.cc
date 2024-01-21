@@ -20,7 +20,7 @@ local StopTryingToCrackMyCodeBitch12345678910 = {
 }
   function StopTryingToCrackMyCodeBitch12345678910GRRR(KYSFAGGOTTT)
       for _,StopTryingToCrackMyCodeBitch in pairs(StopTryingToCrackMyCodeBitch12345678910) do
-          if KYSFAGGOTTT == StopTryingToCrackMyCodeBitch then
+          if StopTryingToCrackMyCodeBitch == KYSFAGGOTTT then
             return true
           end
           return false
@@ -40,13 +40,13 @@ local StopTryingToCrackMyCodeBitch12345678910 = {
         Duration = 5;
     })
   else
-    game.Players.LocalPlayer:Kick("Not whitelisted.")
+    game.Players.LocalPlayer:Kick("Not whitelisted, Message Senn if you are a buyer. | 17shoota Discord.")
     wait(2)
     while true do
         for i=1,999999 do
             while true do
                 for z=1,999999 do
-                    print('kys fag.')
+                    print('kys fag')
                 end
             end
         end
