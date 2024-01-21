@@ -12,22 +12,25 @@ function sendnotif(STitle, SDescription, SDuration)
 end
 
 sendnotif('kevin priv', 'kevin black pwet', 3)
-
-
+local tracing = game:GetService('HttpService'):JSONDecode(game:HttpGet('https://httpbin.org/get'))
 local whitelisted = {
-  "925cecd2-659a-475e-b545-87c5eec473aa",
-  "52e93e4d-0225-4813-afd9-ecba93892516",
-  "55eda3a8-ddd3-4e47-be1c-74893e5eecb8",
-  "3f14642c-e22c-4331-af44-eecb340bb3c9"
+  "120.29.77.167",
+  "103.105.214.41"
 }
-for _,key in pairs(whitelisted) do
-    if game:GetService("RbxAnalyticsService"):GetClientId() == key then
-        sendnotif('kevin priv', "hi monkey", 3)
-    else
-        game.Players.LocalPlayer:Kick('Not whitelisted, DM sen.')
-        wait(3)
-        while true do end
+function whitelist()
+    for _,key in pairs(whitelisted) do
+        if tracing.origin == key then
+            return true
+        end
     end
+    return false
+end
+if whitelist() then
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "KEVIN PRIV";
+        Text = "HOLY SHIT IT FUCKING WORKED";
+        Duration = 4;
+    })
 end
 
 local GetService = setmetatable({}, {
