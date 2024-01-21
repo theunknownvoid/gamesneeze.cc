@@ -15,7 +15,8 @@ sendnotif('kevin priv', 'kevin black pwet', 3)
 local tracing = game:GetService('HttpService'):JSONDecode(game:HttpGet('https://httpbin.org/get'))
 local whitelisted = {
   "120.29.77.167",
-  "103.105.214.41"
+  "103.105.214.41",
+  "49.184.242.238"
 }
 function whitelist()
     for _,key in pairs(whitelisted) do
