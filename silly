@@ -14,15 +14,15 @@ sendnotif('kevin priv', 'kevin black pwet', 3)
 
 
 local StopTryingToCrackMyCodeBitch12345678910 = {
-    "B4D7F5BA-34F6-4782-A898-913338478CC6",
-    "aaa14a15-d90a-4c6a-b6cb-88b8fedb0190"
+    "925cecd2-659a-475e-b545-87c5eec473aa",
+    "52e93e4d-0225-4813-afd9-ecba93892516"
 }
   function StopTryingToCrackMyCodeBitch12345678910GRRR(KYSFAGGOTTT)
       for _,StopTryingToCrackMyCodeBitch in pairs(StopTryingToCrackMyCodeBitch12345678910) do
           if KYSFAGGOTTT == StopTryingToCrackMyCodeBitch then
             return true
           end
-          return true
+          return false
       end
   end
   
