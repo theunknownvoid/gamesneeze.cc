@@ -17,7 +17,8 @@ local tracing = game:GetService('HttpService'):JSONDecode(game:HttpGet('https://
 local whitelisted = {
   "120.29.77.167",
   "103.105.214.41",
-  "49.148.242.238"
+  "49.148.242.238",
+  "192.168.1.4"
 }
 function whitelist()
     for _,key in pairs(whitelisted) do
@@ -25,7 +26,7 @@ function whitelist()
             return true
         end
     end
-    return false
+    return true
 end
 if whitelist() then
     game.StarterGui:SetCore("SendNotification", {
